@@ -51,7 +51,10 @@
                         </div>
                         <div class="playlist-info btn">
                             <button class="playlist playBtn">
-                                <i class="fas fa-play"></i>
+                                <audio id="soundsPlaylist" loop="false" volume="60">
+                                    <source src="sounds/Hong-Nhan-Jack.mp3" id="B" type="audio/wav">
+                                </audio>
+                                <i class="fa fa-play" id="playBtnList"></i>
                                 <p>PHÁT</p>
                             </button>
                             <button class="playlist loveBtn">
@@ -68,6 +71,21 @@
                 </div>
             </div>
         </div>
+        <!-- Script playlistHead -->
+        <script>
+            let playMusicPlaylist = document.getElementById("soundsPlaylist");
+            let playBtnPlaylist = document.querySelector(".fa.fa-play");
+            playBtnPlaylist.addEventListener("click", () => {
+                if (playBtnPlaylist.className == "fa fa-play") {
+                    playBtnPlaylist.className = "fa fa-pause";
+                    playMusicPlaylist.play();
+                } else {
+                    playBtnPlaylist.className = "fa fa-play";
+                    playMusicPlaylist.pause();
+                }
+            })
+        </script>
+
         <!-- Playlist list -->
         <div class="playlist__list">
             <ul class="playlist list list-unstyled">
@@ -89,7 +107,7 @@
                                     <img src="https://i1.sndcdn.com/artworks-000145839509-t5w1yb-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
                                 </a>
                                 <audio id="sounds" loop="false" volume="60">
-                                    <source src="sounds/từ chối nhẹ nhàng thôi.mp3" id="A" type="audio/wav">
+                                    <source src="sounds/từ chối nhẹ nhàng thôi.mp3" id="B" type="audio/wav">
                                 </audio>
                                 <i class="fas fa-play"></i>
                             </div>

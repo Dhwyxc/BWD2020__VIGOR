@@ -12,6 +12,17 @@
     margin: auto;
 }
 
+.post-music1 {
+    margin-top: 20px;
+    margin-bottom: -180px;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
+    border-radius: 8px;
+    margin-left: 305px;
+}
+
 .post-music {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -22,17 +33,20 @@
     border-radius: 8px;
     margin-left: 305px;
 }
-#Areacomment {
-    display: none;
+
+#areaComment {
+    /* display: none; */
     margin-top: -24px;
     margin-bottom: 20px;
     position: relative;
     width: 500px;
     height: 180px;
+    z-index: -1;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 25px 20px 5px rgba(128, 128, 128, 0.363);
     border-radius: 0px 0px 8px 8px;
     margin-left: 305px;
+    transform: translateY(-500px);
 }
 
 .post-video {
@@ -49,7 +63,12 @@
 .post_head {
     display: flex;
 }
-.cmt_head{
+
+.cmt_head {
+    display: flex;
+}
+
+.cmt_headInput {
     display: flex;
 }
 
@@ -58,22 +77,26 @@
     height: 50px;
     border-radius: 50%;
 }
+
 .Avatarcmt {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.cmt_body{
+
+.cmt_body {
     width: 90%;
 }
-.cmt_text{
+
+.cmt_text {
     width: 420px;
     height: 40px;
     border-radius: 20px;
     outline: none;
     border: 2px solid rgb(150, 150, 150);
 }
-.cmttext_body{
+
+.cmttext_body {
     width: 420px;
     height: 40px;
     border-radius: 20px;
@@ -81,11 +104,16 @@
     padding-top: 6px;
     padding-left: 5px;
 }
-.cmttext_body span a{
+
+.cmttext_body span a {
     font-weight: 700;
     color: rgb(0, 0, 0);
-
 }
+
+.cmttext_body span a:hover {
+    text-decoration: none;
+}
+
 .ArtNamee {
     color: black;
 }
@@ -365,22 +393,18 @@
     border-top: 1px solid #c0c0c0;
     display: flex;
     cursor: auto;
-    
 }
 
 .reaction {
     width: 33.33%;
-   
 }
 
 .comment {
     width: 33.33%;
-    
 }
 
 .share {
     width: 33.33%;
-    
 }
 
 

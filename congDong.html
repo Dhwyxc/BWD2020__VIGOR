@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,16 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="css/congDong.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
 </head>
 <script>
     $(function() {
@@ -29,7 +32,7 @@
     <header id="header"></header>
 
     <div class="container-main">
-        <div class="post-music">
+        <div class="post-music1">
             <div class="post_head pt-2 ml-2">
                 <div class="Avatar">
                     <a href="trangcanhan.html">
@@ -102,7 +105,7 @@
                         <i class="far fa-heart"></i>
                         <a class="text-muted text-decoration-none" href="">Thích</a>
                     </span>
-                    
+
                 </div>
                 <div class="comment text-center pt-1">
                     <i class="far fa-comment-alt"></i>
@@ -114,15 +117,8 @@
                 </div>
             </div>
         </div>
-        <script> 
-            $(document).ready(function(){
-              $("#btncomment").click(function()
-              {
-                $("#Areacomment").slideToggle();
-              });
-            });
-        </script>
-        <div id="Areacomment">
+
+        <div id="areaComment">
             <div class="cmt_head pt-3 ml-2">
                 <div class="Avatarcmt">
                     <a href="trangcanhan.html">
@@ -130,7 +126,7 @@
                     </a>
                 </div>
                 <div class="cmttext_body ml-2">
-                    <span><a href="trangcanhan.html">Đức Huy</a></span>
+                    <span><a href="trangcanhan.html" class="pl-2">Đức Huy: </a></span>
                     <span>Bạn hát hay quá kkk :VVVVVVVVVVV</span>
                 </div>
             </div>
@@ -141,22 +137,90 @@
                     </a>
                 </div>
                 <div class="cmttext_body ml-2">
-                    <span><a href="trangcanhan.html">Đức Huy</a></span>
+                    <span><a href="trangcanhan.html" class="pl-2">Đức Huy: </a></span>
                     <span>Bạn hát hay quá kkk :VVVVVVVVVVV</span>
                 </div>
             </div>
-            <div class="cmt_head pt-3 ml-2">
+            <div class="cmt_headInput pt-3 ml-2">
                 <div class="Avatarcmt">
                     <a href="trangcanhan.html">
                         <img class="Avatarcmt" src="image/ava.jpg" alt="Avatar">
                     </a>
                 </div>
                 <div class="cmt_body ml-2">
-                    <input class="cmt_text" type="text" name="" id="" placeholder="Viết bình luận...">
+                    <input class="cmt_text p-3" type="text" name="" id="" placeholder="Viết bình luận...">
                 </div>
             </div>
         </div>
-        
+
+        <script type="text/javascript">
+            let commentHeadInput = document.querySelector(".cmt_headInput");
+            let commentInput = document.querySelector(".cmt_text");
+            let postMusic = document.querySelector(".post-music1");
+            let btnComment = document.getElementById("btncomment");
+            let comment = document.getElementById("areaComment");
+            // Comment Area
+            btnComment.addEventListener("click", () => {
+                    comment.style.transform = "translateY(0px)";
+                    comment.style.zIndex = "1";
+                    postMusic.style.marginBottom = "20px";
+                })
+                // Input Comment
+            commentInput.addEventListener("keydown", (event) => {
+                if (event.keyCode === 13) {
+                    let cmts = commentInput.value;
+                    var newCmt = document.createElement("div");
+                    newCmt.className = "cmt_head pt-3 ml-2";
+
+                    let avaCmt = document.createElement("div");
+                    avaCmt.className = "Avatarcmt";
+                    let linkImg = document.createElement("a");
+                    linkImg.href = "trangcanhan.html";
+                    let imgCmt = document.createElement("img");
+                    imgCmt.className = "Avatarcmt";
+                    imgCmt.src = "image/ava.jpg";
+                    linkImg.appendChild(imgCmt);
+
+                    let textCmt = document.createElement("div");
+                    textCmt.className = "cmttext_body ml-2";
+                    let userCmt = document.createElement("span");
+                    let linkBio = document.createElement("a");
+                    linkBio.className = "pl-2";
+                    linkBio.href = "trangcanhan.html";
+                    userCmt.appendChild(linkBio);
+                    let name = document.createTextNode("Đức Huy: ");
+                    linkBio.appendChild(name);
+                    let cm = document.createElement("span");
+                    let t = document.createTextNode(cmts);
+                    cm.appendChild(t);
+
+                    avaCmt.appendChild(linkImg);
+                    textCmt.appendChild(userCmt);
+                    textCmt.appendChild(cm);
+
+                    newCmt.appendChild(avaCmt);
+                    newCmt.appendChild(textCmt);
+                    newCmt.style.transform = "translateY(-56px)";
+
+                    commentInput.value = "";
+
+                    // console.log(newCmt);
+                    commentHeadInput.style.transform = "translateY(56px)";
+                    comment.appendChild(newCmt);
+                    comment.style.height = "236px";
+
+                    // if (commentInput.value == "") {
+                    //     commentHeadInput.style.transform = "translateY(0px)";
+                    //     // comment.removeChild(newCmt);
+                    //     comment.style.height = "180px";
+                    // }
+
+
+                }
+
+            })
+        </script>
+
         <div class="post-music">
             <div class="post_head pt-2 ml-2">
                 <div class="Avatar">
