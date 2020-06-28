@@ -22,6 +22,18 @@
     border-radius: 8px;
     margin-left: 305px;
 }
+#Areacomment {
+    display: none;
+    margin-top: -24px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 500px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 25px 20px 5px rgba(128, 128, 128, 0.363);
+    border-radius: 0px 0px 8px 8px;
+    margin-left: 305px;
+}
 
 .post-video {
     margin-top: 20px;
@@ -37,13 +49,43 @@
 .post_head {
     display: flex;
 }
+.cmt_head{
+    display: flex;
+}
 
 .Avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+.Avatarcmt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.cmt_body{
+    width: 90%;
+}
+.cmt_text{
+    width: 420px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgb(150, 150, 150);
+}
+.cmttext_body{
+    width: 420px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(153, 153, 153, 0.397);
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.cmttext_body span a{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
 
+}
 .ArtNamee {
     color: black;
 }
@@ -322,18 +364,23 @@
 .post__Foot {
     border-top: 1px solid #c0c0c0;
     display: flex;
+    cursor: auto;
+    
 }
 
 .reaction {
     width: 33.33%;
+   
 }
 
 .comment {
     width: 33.33%;
+    
 }
 
 .share {
     width: 33.33%;
+    
 }
 
 

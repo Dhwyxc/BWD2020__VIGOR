@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,17 +97,66 @@
             </script>
             <!--  -->
             <div class="post__Foot ">
-                <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
-                    <a class="text-muted text-decoration-none" href="">Thích</a>
+                <div class="reaction text-center pt-1">
+                    <span>
+                        <i class="far fa-heart"></i>
+                        <a class="text-muted text-decoration-none" href="">Thích</a>
+                    </span>
+                    
                 </div>
-                <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" href="">Bình Luận</a>
+                <div class="comment text-center pt-1">
+                    <i class="far fa-comment-alt"></i>
+                    <a id="btncomment" class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
-                <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
+                <div class="share text-center pt-1">
+                    <i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
                 </div>
             </div>
         </div>
+        <script> 
+            $(document).ready(function(){
+              $("#btncomment").click(function()
+              {
+                $("#Areacomment").slideToggle();
+              });
+            });
+        </script>
+        <div id="Areacomment">
+            <div class="cmt_head pt-3 ml-2">
+                <div class="Avatarcmt">
+                    <a href="trangcanhan.html">
+                        <img class="Avatarcmt" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="cmttext_body ml-2">
+                    <span><a href="trangcanhan.html">Đức Huy</a></span>
+                    <span>Bạn hát hay quá kkk :VVVVVVVVVVV</span>
+                </div>
+            </div>
+            <div class="cmt_head pt-3 ml-2">
+                <div class="Avatarcmt">
+                    <a href="trangcanhan.html">
+                        <img class="Avatarcmt" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="cmttext_body ml-2">
+                    <span><a href="trangcanhan.html">Đức Huy</a></span>
+                    <span>Bạn hát hay quá kkk :VVVVVVVVVVV</span>
+                </div>
+            </div>
+            <div class="cmt_head pt-3 ml-2">
+                <div class="Avatarcmt">
+                    <a href="trangcanhan.html">
+                        <img class="Avatarcmt" src="image/ava.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="cmt_body ml-2">
+                    <input class="cmt_text" type="text" name="" id="" placeholder="Viết bình luận...">
+                </div>
+            </div>
+        </div>
+        
         <div class="post-music">
             <div class="post_head pt-2 ml-2">
                 <div class="Avatar">
@@ -331,8 +379,6 @@
                 heart.className = "fa fa-heart";
                 heart.style.color = "rgb(255, 159, 103)";
                 hiddenSpan.forEach(span => {
-                    // let compStyles = window.getComputedStyle(span);
-                    // compStyles.getPropertyValue("visibility");
                     span.style.display = "none";
                 });
             } else {
