@@ -4,7 +4,20 @@
     color: #ff9f67;
 }
 
-
+/* Hashtag */
+.hashtag{
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: hsla(29, 100%, 64%, 0.05);
+}
+.hashtag p{
+    font-weight: 500;
+    font-size: 19px;
+}
 /* ----Post------ */
 
 .container-main {

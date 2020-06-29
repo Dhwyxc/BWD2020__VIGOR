@@ -72,8 +72,9 @@
     #Form_Head::after {
         content: "";
         position: absolute;
+        z-index: -1;
         top: 96%;
-        left: 62%;
+        left: 64.75%;
         border-left: 51px solid transparent;
         border-right: 51px solid transparent;
         border-top: 51px solid #ffa047;
@@ -95,6 +96,34 @@
         background-color: #ffa047;
         box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.363);
         z-index: 10;
+    }
+    #content{
+        /* mask-image: linear-gradient(bottom,#fff,#fff 97%,rgba(255,255,255,0)); */
+        -webkit-mask-image: -webkit-linear-gradient(top,#fff,#fff 97%,rgba(255,255,255,0));
+        height: 485px;
+        border-radius: 5px;
+        overflow: auto;
+    }
+    #content::-webkit-scrollbar {
+    display: none;
+    }
+
+    
+    #content .content_card{
+        width: 100%;
+        height: 70px;
+        background-color: aliceblue;
+        border-radius: 5px;
+        display: inline-flex;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #content .content_card img{
+        border-radius: 50%;
+    }
+    #content .content_card p{
+        font-size: 14px;
+        margin-left: 5px;
     }
 </style>
 <script>
@@ -153,7 +182,93 @@
     </div>
     <div id="notify-after">
         <div id="Form_Head">
-
+            <div id="content" class="p-3">
+                <h3 class="text-left">
+                    <span class="h4 text-white">
+                        Thông báo
+                    </span>
+                </h3>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+                <div class="content_card">
+                    <a href="trangcanhan.html"><img src="image/ava.jpg" alt="" width="50px" height="50px"></a>
+                    <p class="text-left">
+                        <span>
+                            <a href="trangcanhan.html" class="font-weight-bold text-decoration-none" style="color: black;" >Đức Huy</a> đã đăng một cập nhật: .......
+                        </span>
+                    </p>
+                </div>
+            </div>
         </div>
         <div id="Form_Exit">
             <div>

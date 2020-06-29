@@ -40,6 +40,262 @@
     padding-bottom: 5px;
     border-bottom: 2px solid #ff9f67;
 }
+
+/* -------MusicPost------- */
+.musicpost{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0px 0px 20px 2px rgba(128, 128, 128, 0.363);
+}
+/* -------music------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.music-player {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.music-player .Avatar{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+}
+.titre {
+  margin-left: 200px;
+  position: absolute;
+  float: left;
+  width: 50%;
+  z-index: 2;
+}
+
+.lecteur {
+  margin-left: 100px;
+  width: 70%;
+  display: block;
+  margin-top: 10%;
+  height: auto;
+  position: relative;
+  float: left;
+  z-index: 10;
+}
+
+.mejs__button>button:focus {
+  outline: 0px dotted rgb(93, 93, 93);
+}
+
+.mejs__container {
+  position: relative;
+  background-color: transparent;
+  min-width: auto !important;
+}
+
+.mejs__controls {
+  padding: 0 10%;
+  background: transparent !important;
+  display: block;
+  position: relative;
+}
+
+.mejs__controls div {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.mejs__controls .mejs__playpause-button {
+  position: absolute !important;
+  right: 0%;
+  bottom: 95%;
+  width: 40px;
+}
+
+.mejs__controls .mejs__playpause-button button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 23px;
+  color: #ffa047;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.mejs__controls .mejs__play button:before {
+  content: "\f04b";
+}
+
+.mejs__controls .mejs__pause button:before {
+  content: "\f04c";
+}
+
+.mejs__controls .mejs__volume-button button {
+  display: block;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #ffa047;
+  background: transparent;
+  margin: 0;
+}
+
+.mejs__controls .mejs__mute button:before {
+  content: "\f028";
+}
+
+.mejs__controls .mejs__unmute button:before {
+  content: "\f026";
+}
+
+.mejs__controls .mejs__time {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  min-width: 100%;
+  margin-left: 50px;
+}
+
+.mejs__controls .mejs__time span {
+  font-size: 15px;
+}
+
+.mejs__controls span.mejs__duration {
+  font-weight: 600;
+  float: right;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.762);
+}
+
+.mejs__controls span.mejs__currenttime {
+  font-weight: 700;
+  float: left;
+}
+
+.mejs__controls .mejs__time-rail {
+  width: 100%;
+  margin: 0;
+}
+
+.mejs__controls .mejs__time-rail span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+  background: rgba(123, 123, 123, 0.4);
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float {
+  display: none;
+  top: -40px;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  font-size: 10px;
+  background: rgb(174, 174, 174);
+  border: 0;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0;
+  line-height: 26px;
+  color: #100d28;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+  top: auto;
+  bottom: -9px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 6px solid rgb(150, 150, 150);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.mejs__controls .mejs__time-rail .mejs__time-current {
+
+  background: #ffa047 none repeat scroll 0 0;
+}
+
+.mejs__controls .mejs__time-handle {
+  display: none;
+}
+
+.mejs__controls .mejs__volume-button {
+  position: relative;
+  position: absolute !important;
+  top: 70px;
+  right: 25%;
+  width: 40px;
+  height: 40px;
+}
+
+.mejs__controls .mejs__horizontal-volume-slider {
+  display: block;
+  position: absolute !important;
+  position: relative;
+  top: 70px;
+  right: 10%;
+  width: 60px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 50px;
+  line-height: 11px;
+}
+
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-total,
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(90, 90, 90, 0.5);
+}
+
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+  background: #ffa047;
+}
+
+.mejs__offscreen {
+  display: none;
+}
+
+
+/* ---------------- */
 #btn-follow{
     text-align: center;
     width: 100px;
