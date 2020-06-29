@@ -144,6 +144,7 @@ body {
                 &:hover {
                     .fas.fa-play {
                         display: block;
+                        // visibility: visible;
                     }
                     #playlistItemIMG {
                         position: relative;
@@ -163,6 +164,7 @@ body {
                 .fas.fa-pause {
                     @extend .fas.fa-play;
                     display: block;
+                    // visibility: visible;
                 }
             }
             .playlistItem__content {

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/musicNav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/slick.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-fluid musicNav fixed-bottom">
+        <div class="container musicNav p-0">
+            <div class="musicNav__info">
+                <div class="musicNav__infoImg">
+                    <a href="#" class="musicNav__imgLink">
+                        <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/4/0/d/740d5e0fd272d2421d441e9fd5c08fdd.jpg" alt="image" width="50px" height="50px" class="rounded-circle">
+                    </a>
+                </div>
+                <div class="musicNav__infoName">
+                    <p>EKIK</p>
+                    <p>Anh Không Sai Chúng Ta Sai</p>
+                </div>
+            </div>
+            <div class="musicNav__navigate">
+                <div class="musicNav__playBtn">
+                    <i class="fas fa-step-backward"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-repeat"></i>
+                </div>
+                <div class="musicNav__progressMusic">
+                    <audio style="width: 100%;" class="fc-media">
+						<source src="sounds/từ chối nhẹ nhàng thôi.mp3" type="audio/mp3"/>
+					</audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var audio = {
+            init: function() {
+                var $that = this;
+                $(function() {
+                    $that.components.media();
+                });
+            },
+            components: {
+                media: function(target) {
+                    var media = $('audio.fc-media', (target !== undefined) ? target : 'body');
+                    if (media.length) {
+                        media.mediaelementplayer({
+                            audioHeight: 40,
+                            features: ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
+                            alwaysShowControls: true,
+                            timeAndDurationSeparator: '<span></span>',
+                            iPadUseNativeControls: true,
+                            iPhoneUseNativeControls: true,
+                            AndroidUseNativeControls: true
+                        });
+                    }
+                },
+
+            },
+        };
+        audio.init();
+    </script>
+</body>
+
+</html>

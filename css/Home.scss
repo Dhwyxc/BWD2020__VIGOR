@@ -97,9 +97,28 @@ canvas {
     }
     .listItem__img {
         padding-left: 15px;
+        &:hover {
+            i {
+                visibility: visible;
+            }
+            img {
+                filter: brightness(50%);
+            }
+        }
+        .fa.fa-pause {
+            visibility: visible;
+        }
+        i {
+            visibility: hidden;
+            position: relative;
+            top: 2.5px;
+            left: -35px;
+            color: white;
+            cursor: pointer;
+        }
     }
     .listItem__content {
-        padding-left: 15px;
+        // padding-left: 15px;
         span {
             color: $grayColor;
         }
@@ -368,49 +387,49 @@ h2 {
     @extend .topCover;
 }
 
-.container-fluid {
-    background-color: black;
-    .container.Ft {
-        font-weight: 600;
-        .logo.m-0 {
-            margin-left: 0px;
-            position: relative;
-            top: -32px;
-        }
-        a {
-            color: white;
-            &:hover {
-                text-decoration: none;
-                color: $primaryColor;
-            }
-        }
-        .congTy__item,
-        .congDong__item,
-        .lienKet__item {
-            p {
-                font-weight: 700;
-                color: $grayColor;
-            }
-        }
-        .link-item {
-            font-size: 12px;
-        }
-        .country {
-            a {
-                font-size: 12px;
-            }
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-    .socialMedia {
-        i {
-            color: $whiteColor;
-            font-size: 44px;
-            &:hover {
-                color: $primaryColor;
-            }
-        }
-    }
-}
+// .container-fluid {
+//     background-color: black;
+//     .container.Ft {
+//         font-weight: 600;
+//         .logo.m-0 {
+//             margin-left: 0px;
+//             position: relative;
+//             top: -32px;
+//         }
+//         a {
+//             color: white;
+//             &:hover {
+//                 text-decoration: none;
+//                 color: $primaryColor;
+//             }
+//         }
+//         .congTy__item,
+//         .congDong__item,
+//         .lienKet__item {
+//             p {
+//                 font-weight: 700;
+//                 color: $grayColor;
+//             }
+//         }
+//         .link-item {
+//             font-size: 12px;
+//         }
+//         .country {
+//             a {
+//                 font-size: 12px;
+//             }
+//             p {
+//                 font-size: 12px;
+//             }
+//         }
+//     }
+//     .socialMedia {
+//         i {
+//             color: $whiteColor;
+//             font-size: 44px;
+//             &:hover {
+//                 color: $primaryColor;
+//             }
+//         }
+//     }
+// }

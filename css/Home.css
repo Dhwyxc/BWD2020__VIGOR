@@ -85,8 +85,26 @@ canvas {
   padding-left: 15px;
 }
 
-.listItem__main .listItem__content {
-  padding-left: 15px;
+.listItem__main .listItem__img:hover i {
+  visibility: visible;
+}
+
+.listItem__main .listItem__img:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.listItem__main .listItem__img .fa.fa-pause {
+  visibility: visible;
+}
+
+.listItem__main .listItem__img i {
+  visibility: hidden;
+  position: relative;
+  top: 2.5px;
+  left: -35px;
+  color: white;
+  cursor: pointer;
 }
 
 .listItem__main .listItem__content span {
@@ -644,5 +662,4 @@ h2 {
 .topCover img, .topSangTac img, .baiHatMoi img {
   border-radius: 7px;
 }
-
 /*# sourceMappingURL=Home.css.map */
