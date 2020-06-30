@@ -207,10 +207,20 @@
   height: 4px;
   border-radius: 50px;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 0px;
+}
+.mejs__controls .mejs__time-rail .mejs__time-slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 50px;
 }
 
 .mejs__controls .mejs__time-rail .mejs__time-loaded {
+  transform: scaleX(1);
   background: rgba(123, 123, 123, 0.4);
 }
 
@@ -246,7 +256,6 @@
 }
 
 .mejs__controls .mejs__time-rail .mejs__time-current {
-
   background: #ffa047 none repeat scroll 0 0;
 }
 

@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
-    <!-- <script src="node_modules/jquery/dist/player.js"></script>  -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/jquery/dist/slick.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
@@ -23,7 +22,8 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
-    <!--  -->   
+    <!--  -->  
+    <script src="node_modules/jquery/dist/player.js"></script>  
 </head>
 <!-- Load Header and Footer -->
 <script>
@@ -32,10 +32,12 @@
         $("#footer").load("footer.html");
         $("#notify").load("notifications.html");
         $("#bottomNav").load("musicNav.html");
+        
     });
 </script>
 
 <body>
+    
     <div id="notify"></div>
     <!-- Header -->
     <header id="header"></header>
@@ -1466,8 +1468,6 @@
 
     <!-- Footer -->
     <div id="footer"></div>
-
-
 </body>
 
 </html>
