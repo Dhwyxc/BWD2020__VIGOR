@@ -20,12 +20,14 @@ $fontFamily: Roboto sans-serif;
 
 .container-fluid.musicNav {
     // margin-bottom: 700px;
+    display: none;
     height: 70px;
     background: linear-gradient(90deg, #ffac67 0%, #7f86e0 100%);
     .container.musicNav {
         display: flex;
         .musicNav__info {
             display: flex;
+            width: 300px;
             .musicNav__infoImg {
                 padding-top: 10px;
                 margin-right: 10px;
@@ -44,25 +46,28 @@ $fontFamily: Roboto sans-serif;
                 }
             }
         }
-        .musicNav__playBtn {
-            position: relative;
-            top: 25px;
-            left: 20px;
-            .fas.fa-step-backward {
+        .musicNav__navigate {
+            // width: 50px;
+            .musicNav__playBtn {
                 position: relative;
-                left: 45px;
-            }
-            .fas.fa-step-forward {
-                position: relative;
-                left: 100px;
-            }
-            .fas.fa-random {
-                position: relative;
-                left: 740px;
-            }
-            .fas.fa-repeat {
-                position: relative;
-                left: 756px;
+                top: 25px;
+                left: 50px;
+                .fas.fa-step-backward {
+                    position: relative;
+                    left: -10px;
+                }
+                .fas.fa-step-forward {
+                    position: relative;
+                    left: 45px;
+                }
+                .fas.fa-random {
+                    position: relative;
+                    left: 680px;
+                }
+                .fas.fa-repeat {
+                    position: relative;
+                    left: 696px;
+                }
             }
         }
         .musicNav__progressMusic {
@@ -131,7 +136,7 @@ $fontFamily: Roboto sans-serif;
             padding: 0;
             margin: 0;
             position: relative;
-            left: 60px;
+            left: 35px;
             top: 25px;
         }
     }
@@ -210,22 +215,19 @@ $fontFamily: Roboto sans-serif;
 
 .mejs__controls {
     span.mejs__duration {
-        // float: right;
-        // text-align: right;
         color: #ccc;
         position: relative;
         top: -13px;
-        left: 628px;
+        left: 597px;
     }
 }
 
 .mejs__controls {
     span.mejs__currenttime {
         font-weight: 700;
-        // float: left;
         position: relative;
         top: -12px;
-        left: 195px;
+        left: 165px;
     }
 }
 
@@ -239,7 +241,7 @@ $fontFamily: Roboto sans-serif;
         margin: 0;
         position: relative;
         top: -28px;
-        left: 250px;
+        left: 220px;
         .mejs__time-loaded {
             width: 400px;
             background-color: $backGroundColor;
@@ -340,8 +342,6 @@ $fontFamily: Roboto sans-serif;
     width: 40px;
     height: 40px;
 }
-
-
 
 .mejs__controls {
     background: #fff;

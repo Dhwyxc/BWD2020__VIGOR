@@ -22,8 +22,8 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
-    <!--  -->  
-    <script src="node_modules/jquery/dist/player.js"></script>  
+    <!--  -->
+    <script src="node_modules/jquery/dist/player.js"></script>
 </head>
 <!-- Load Header and Footer -->
 <script>
@@ -32,12 +32,11 @@
         $("#footer").load("footer.html");
         $("#notify").load("notifications.html");
         $("#bottomNav").load("musicNav.html");
-        
     });
 </script>
 
 <body>
-    
+
     <div id="notify"></div>
     <!-- Header -->
     <header id="header"></header>
@@ -79,11 +78,11 @@
                                     <div class="listItem__number">
                                         <span style="color: #db1d1d; font-weight: bold;">01</span>
                                     </div>
-                                    <div class="listItem__img">
+                                    <div class="listItem__img1">
                                         <a href="#" class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/4/0/d/740d5e0fd272d2421d441e9fd5c08fdd.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/4/0/d/740d5e0fd272d2421d441e9fd5c08fdd.jpg" alt="listImg" width="50px" height="50px" class="rounded" id="IMG1_BXH">
                                         </a>
-                                        <audio id="soundsBXH" loop="false" volume="60">
+                                        <audio id="soundsBXH" loop="false" volume="0">
                                             <source src="sounds/từ chối nhẹ nhàng thôi.mp3" id="B" type="audio/wav">
                                         </audio>
                                         <i class="fa fa-play"></i>
@@ -103,9 +102,9 @@
                                     <div class="listItem__number">
                                         <span style="color: #1237de; font-weight: bold;">02</span>
                                     </div>
-                                    <div class="listItem__img">
+                                    <div class="listItem__img2">
                                         <a href="#" class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/f/c/ddfc0c54f8c99b517539cc11c24f6b88.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/f/c/ddfc0c54f8c99b517539cc11c24f6b88.jpg" alt="listImg" width="50px" height="50px" class="rounded" id="IMG2_BXH">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
@@ -522,7 +521,6 @@
                             // })
                         }
                     })
-
                 });
             </script>
             <div class="col-md-5 BXH&deXuat">

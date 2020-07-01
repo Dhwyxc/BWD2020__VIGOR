@@ -81,23 +81,33 @@ canvas {
   color: #999999;
 }
 
+.listItem__main .listItem__img1,
+.listItem__main .listItem__img2,
 .listItem__main .listItem__img {
   padding-left: 15px;
 }
 
+.listItem__main .listItem__img1:hover i,
+.listItem__main .listItem__img2:hover i,
 .listItem__main .listItem__img:hover i {
   visibility: visible;
 }
 
+.listItem__main .listItem__img1:hover img,
+.listItem__main .listItem__img2:hover img,
 .listItem__main .listItem__img:hover img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
+.listItem__main .listItem__img1 .fa.fa-pause,
+.listItem__main .listItem__img2 .fa.fa-pause,
 .listItem__main .listItem__img .fa.fa-pause {
   visibility: visible;
 }
 
+.listItem__main .listItem__img1 i,
+.listItem__main .listItem__img2 i,
 .listItem__main .listItem__img i {
   visibility: hidden;
   position: relative;

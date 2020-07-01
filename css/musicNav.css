@@ -6,6 +6,7 @@
 }
 
 .container-fluid.musicNav {
+  display: none;
   height: 70px;
   background: -webkit-gradient(linear, left top, right top, from(#ffac67), to(#7f86e0));
   background: linear-gradient(90deg, #ffac67 0%, #7f86e0 100%);
@@ -21,6 +22,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 300px;
 }
 
 .container-fluid.musicNav .container.musicNav .musicNav__info .musicNav__infoImg {
@@ -41,30 +43,30 @@
   font-weight: 350;
 }
 
-.container-fluid.musicNav .container.musicNav .musicNav__playBtn {
+.container-fluid.musicNav .container.musicNav .musicNav__navigate .musicNav__playBtn {
   position: relative;
   top: 25px;
-  left: 20px;
+  left: 50px;
 }
 
-.container-fluid.musicNav .container.musicNav .musicNav__playBtn .fas.fa-step-backward {
+.container-fluid.musicNav .container.musicNav .musicNav__navigate .musicNav__playBtn .fas.fa-step-backward {
+  position: relative;
+  left: -10px;
+}
+
+.container-fluid.musicNav .container.musicNav .musicNav__navigate .musicNav__playBtn .fas.fa-step-forward {
   position: relative;
   left: 45px;
 }
 
-.container-fluid.musicNav .container.musicNav .musicNav__playBtn .fas.fa-step-forward {
+.container-fluid.musicNav .container.musicNav .musicNav__navigate .musicNav__playBtn .fas.fa-random {
   position: relative;
-  left: 100px;
+  left: 680px;
 }
 
-.container-fluid.musicNav .container.musicNav .musicNav__playBtn .fas.fa-random {
+.container-fluid.musicNav .container.musicNav .musicNav__navigate .musicNav__playBtn .fas.fa-repeat {
   position: relative;
-  left: 740px;
-}
-
-.container-fluid.musicNav .container.musicNav .musicNav__playBtn .fas.fa-repeat {
-  position: relative;
-  left: 756px;
+  left: 696px;
 }
 
 .container-fluid.musicNav .container.musicNav .musicNav__progressMusic {
@@ -125,7 +127,7 @@
   padding: 0;
   margin: 0;
   position: relative;
-  left: 60px;
+  left: 35px;
   top: 25px;
 }
 
@@ -188,14 +190,14 @@
   color: #ccc;
   position: relative;
   top: -13px;
-  left: 628px;
+  left: 597px;
 }
 
 .mejs__controls span.mejs__currenttime {
   font-weight: 700;
   position: relative;
   top: -12px;
-  left: 195px;
+  left: 165px;
 }
 
 .mejs__controls .mejs__time-total.mejs__time-slider {
@@ -208,7 +210,7 @@
   margin: 0;
   position: relative;
   top: -28px;
-  left: 250px;
+  left: 220px;
 }
 
 .mejs__controls .mejs__time-rail .mejs__time-loaded {
