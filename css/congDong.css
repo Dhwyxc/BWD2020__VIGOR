@@ -8,7 +8,7 @@
 .hashtag{
     cursor: pointer;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     width: 250px;
     height: 400px;
     border-radius: 5px;
