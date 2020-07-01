@@ -60,7 +60,7 @@
     box-shadow: 0px 25px 20px 5px rgba(128, 128, 128, 0.363);
     border-radius: 0px 0px 8px 8px;
     margin-left: 305px;
-    transform: translateY(-500px);
+    transform: translateY(-999px);
 }
 
 .post-video {
@@ -417,6 +417,7 @@
 }
 
 .comment {
+    cursor: pointer;
     width: 33.33%;
 }
 
