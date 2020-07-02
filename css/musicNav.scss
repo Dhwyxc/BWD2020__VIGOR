@@ -22,7 +22,7 @@ $fontFamily: Roboto sans-serif;
     // margin-bottom: 700px;
     display: none;
     height: 70px;
-    background: linear-gradient(90deg, #ffac67 0%, #7f86e0 100%);
+    background: linear-gradient(180deg, rgba(253, 212, 189, 0.95) 0%,  rgb(255, 159, 103) 100%);
     .container.musicNav {
         display: flex;
         .musicNav__info {
@@ -215,7 +215,7 @@ $fontFamily: Roboto sans-serif;
 
 .mejs__controls {
     span.mejs__duration {
-        color: #ccc;
+        color: rgb(255, 255, 255);
         position: relative;
         top: -13px;
         left: 597px;

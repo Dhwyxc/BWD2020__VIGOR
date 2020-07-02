@@ -8,8 +8,8 @@
 .container-fluid.musicNav {
   display: none;
   height: 70px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffac67), to(#7f86e0));
-  background: linear-gradient(90deg, #ffac67 0%, #7f86e0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 212, 189, 0.95)), to(#ff9f67));
+  background: linear-gradient(180deg, rgba(253, 212, 189, 0.95) 0%, #ff9f67 100%);
 }
 
 .container-fluid.musicNav .container.musicNav {
@@ -187,7 +187,7 @@
 }
 
 .mejs__controls span.mejs__duration {
-  color: #ccc;
+  color: white;
   position: relative;
   top: -13px;
   left: 597px;

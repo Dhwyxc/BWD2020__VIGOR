@@ -63,8 +63,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
                             <div class="userOption">
-                                <a class="nav-link__user" href="trangcanhan.html" id="nav_ava">
-                                    <img src="image/ava.jpg" alt="userAva" width="44px" height="44px">
+                                <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
+                                    <img src="image/image.jpg" alt="userAva" width="44px" height="44px">
                                 </a>
                                 <div class="uploadFile">
                                     <label for="songUpload" class="uploadSongs">
@@ -119,7 +119,7 @@
             <div class="row">
                 <div class="col-8">
                     <div class="item__top">
-                        <a id="all-tracks">Tất cả</a>
+                        <a id="all-tracks" style="padding-bottom: 5px;border-bottom: 2px solid #ff9f67;">Tất cả</a>
                         <a id="all-tracks">Bài hát phổ biến</a>
                         <a id="all-tracks">Albums</a>
                         <a id="all-tracks">Playlists</a>
@@ -420,7 +420,7 @@
                         <div class="tracks">
                             <span style="font-size: 14px;">Bài hát</span>
                             <br>
-                            <span style="font-size: 25px;">7</span>
+                            <span style="font-size: 25px;">3</span>
                         </div>
                     </div>
                     <div class="likes__list">
@@ -539,7 +539,7 @@
                                 });
                                 // Heart - DeXuat
                                 let hiddenSpan = document.querySelectorAll(".tooltipText-heart");
-                                let heartSelect = document.querySelectorAll(".far").forEach(heart => {
+                                let heartSelect = document.querySelectorAll(".far.fa-heart").forEach(heart => {
                                     heart.addEventListener("click", () => {
                                         if (heart.className == "far fa-heart") {
                                             heart.className = "fa fa-heart";
