@@ -180,9 +180,9 @@
                                     <img src="https://i1.sndcdn.com/artworks-000145839509-t5w1yb-t50x50.jpg" id="playlistItemIMG" alt="playlist" width="50px" height="50px" class="rounded">
                                 </a>
                                 <audio id="sounds" loop="false" volume="60">
-                                    <source src="sounds/từ chối nhẹ nhàng thôi.mp3" id="B" type="audio/wav">
+                                    <source src="sounds/Khoc-Cho-Nguoi-Ai-Khoc-Cho-Anh-Gia-Huy-Singer.mp3" id="B" type="audio/wav">
                                 </audio>
-                                <i class="fas fa-play"></i>
+                                <i id="play1" class="fas fa-play"></i>
                             </div>
                             <div class="playlistItem__content">
                                 <span>Gia Huy Singer - <strong>Khóc Cho Người Ai Khóc Cho Anh</strong> </span>
@@ -513,7 +513,7 @@
             // Play btn
         let playMusic = document.getElementById("sounds");
         let back = document.querySelectorAll("#playlistItemIMG");
-        let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+        let playBtn = document.querySelectorAll("#play1").forEach(PLAY => {
             PLAY.addEventListener("click", (event) => {
                 if (PLAY.className == "fas fa-play") {
                     PLAY.className = "fas fa-pause";
