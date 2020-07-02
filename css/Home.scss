@@ -35,12 +35,13 @@ body {
 
 .slick-dots {
     position: relative;
-    top: 260px;
+    top: 340px;
 }
 
 canvas {
     // background: url('https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.5/images/bg-chart.jpg');
-    background: linear-gradient(180deg, $primaryColor 0%, #1f1da7 100%);
+    background: linear-gradient(180deg, rgba(255, 159, 103, 0.514) 0%,  rgb(255, 159, 103) 100%);
+    border-radius: 10px;
 }
 
 .listItem__playCount::after {
@@ -57,6 +58,9 @@ canvas {
 }
 
 .BXH__list {
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 10px;
     // background: linear-gradient(135deg, rgb(126, 125, 124) 0%, rgb(126, 125, 124) 100%);
     &:hover {
         .list.list-unstyled::-webkit-scrollbar {
@@ -85,7 +89,11 @@ canvas {
         }
     }
 }
-
+.col-md-5{
+    padding-top: 10px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
 .list__item {
     margin-bottom: 10px;
 }
