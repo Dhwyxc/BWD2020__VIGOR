@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đức Huy</title>
+    <title>Le Kha</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -23,9 +23,12 @@
             $("#notify").load("notifications.html");
         });
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
+        </style>
 </head>
 
-<body>
+<body style="font-family: 'Niramit', sans-serif;">
     <div id="notify"></div>
     <header id="header"></header>
     <div class="container-main">
@@ -59,7 +62,7 @@
                                         </a>
                                     </div>
                                     <div class="titre">
-                                        <h4>Đức Huy</h4>
+                                        <h4>Le Kha</h4>
                                         <h3>PastLives Cover</h3>
                                     </div>
                                     <div class="lecteur">
@@ -68,6 +71,31 @@
                                         </audio>
                                     </div>
                                 </div>
+                                <div class="tcn_comment">
+                                    <div class="heartbtn">
+                                        <button id="heartbf1" class="heartbf"><i class="fas fa-heart"></i> 325</button>
+                                        <button id="heartat1" class="heartat"><i class="fas fa-heart"></i> 326</button>
+                                        <button id="sharebtn"><i class="far fa-share-square"></i> Chia sẻ</button>
+                                    </div>
+                                    <div class="playvcmt">
+                                        <span><i class="fas fa-play"></i> 26.2K</span>
+                                        <span><i class="fas fa-comment-alt"></i> 124</span>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(document).ready(function(){
+                                      $("#heartbf1").click(
+                                        function(){
+                                            $("#heartat1").css({"display":"block"}),
+                                            $("#heartbf1").css({"display":"none"});
+                                    });       
+                                      $("#heartat1").click(
+                                        function(){
+                                            $("#heartat1").css({"display":"none"}),
+                                            $("#heartbf1").css({"display":"block"});
+                                    });
+                                  });
+                                </script>
                             </div>
                             <script>
                                 var audio = {
@@ -107,7 +135,7 @@
                                         </a>
                                     </div>
                                     <div class="titre">
-                                        <h4>Đức Huy</h4>
+                                        <h4>Le Kha</h4>
                                         <h3>Từ chối nhẹ nhàng thôi</h3>
                                     </div>
                                     <div class="lecteur">
@@ -116,6 +144,32 @@
                                         </audio>
                                     </div>
                                 </div>
+                                <div class="tcn_comment">
+                                    <div class="heartbtn">
+                                        <button id="heartbf2" class="heartbf"><i class="fas fa-heart"></i> 325</button>
+                                        <button id="heartat2" class="heartat"><i class="fas fa-heart"></i> 326</button>
+                                        <button id="sharebtn"><i class="far fa-share-square"></i> Chia sẻ</button>
+
+                                    </div>
+                                    <div class="playvcmt">
+                                        <span><i class="fas fa-play"></i> 26.2K</span>
+                                        <span><i class="fas fa-comment-alt"></i> 124</span>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(document).ready(function(){
+                                      $("#heartbf2").click(
+                                        function(){
+                                            $("#heartat2").css({"display":"block"}),
+                                            $("#heartbf2").css({"display":"none"});
+                                    });       
+                                      $("#heartat2").click(
+                                        function(){
+                                            $("#heartat2").css({"display":"none"}),
+                                            $("#heartbf2").css({"display":"block"});
+                                    });
+                                  });
+                                </script>
                             </div>
                             <script>
                                 var audio = {
@@ -155,7 +209,7 @@
                                         </a>
                                     </div>
                                     <div class="titre">
-                                        <h4>Đức Huy</h4>
+                                        <h4>Le Kha</h4>
                                         <h3>#TRAMY</h3>
                                     </div>
                                     <div class="lecteur">
@@ -164,6 +218,32 @@
                                         </audio>
                                     </div>
                                 </div>
+                                <div class="tcn_comment">
+                                    <div class="heartbtn">
+                                        <button id="heartbf3" class="heartbf"><i class="fas fa-heart"></i> 325</button>
+                                        <button id="heartat3" class="heartat"><i class="fas fa-heart"></i> 326</button>
+                                        <button id="sharebtn"><i class="far fa-share-square"></i> Chia sẻ</button>
+
+                                    </div>
+                                    <div class="playvcmt">
+                                        <span><i class="fas fa-play"></i> 26.2K</span>
+                                        <span><i class="fas fa-comment-alt"></i> 124</span>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(document).ready(function(){
+                                      $("#heartbf3").click(
+                                        function(){
+                                            $("#heartat3").css({"display":"block"}),
+                                            $("#heartbf3").css({"display":"none"});
+                                    });       
+                                      $("#heartat3").click(
+                                        function(){
+                                            $("#heartat3").css({"display":"none"}),
+                                            $("#heartbf3").css({"display":"block"});
+                                    });
+                                  });
+                                </script>
                             </div>
                             <script>
                                 var audio = {
@@ -256,7 +336,7 @@
                                             <audio id="sounds" loop="false" volume="60">
                                             <source src="sounds/Hong-Nhan-Jack.mp3" id="A" type="audio/wav">
                                         </audio>
-                                            <i class="fas fa-play"></i>
+                                            <i id="playM" class="fas fa-play"></i>
                                         </div>
                                         <div class="listDeXuat__songName">
                                             <strong>Hồng Nhan</strong>
@@ -336,7 +416,7 @@
                                 // DeXuat
                                 let playMusic = document.getElementById("sounds");
                                 let back = document.querySelectorAll("#songsDeXuat");
-                                let playBtn = document.querySelectorAll(".fas.fa-play").forEach(PLAY => {
+                                let playBtn = document.querySelectorAll("#playM").forEach(PLAY => {
                                     PLAY.addEventListener("click", (event) => {
                                         if (PLAY.className == "fas fa-play") {
                                             PLAY.className = "fas fa-pause";
@@ -398,7 +478,7 @@
                                             </a>
                                         </div>
                                         <div class="list__Fanalsolikes__songName">
-                                            <strong>Thông</strong>
+                                            <strong>Trung Thong</strong>
                                             <br>
                                             <span><i class="fas fa-user-friends"></i> <span id="numberFAL"> 1542</span></span>
                                         </div>
@@ -444,7 +524,7 @@
                                         <div class="list__Fanalsolikes__songName">
                                             <strong>Ngọt</strong>
                                             <br>
-                                            <span><i class="fas fa-user-friends"></i> 1342</span>
+                                            <span><i class="fas fa-user-friends"></i> <span id="numberFALa">1342</span></span>
                                         </div>
                                         <div class="list__Fanalsolikes__follow">
                                             <button id="btn-fla">
@@ -460,15 +540,19 @@
                                         </div>
                                         <script>
                                             $(document).ready(function(){
+                                                var a = 1342
+                                                var b = 1343
                                               $("#btn-fla").click(
                                                 function(){
                                                     $("#btn-flwa").css({"display":"block"}),
-                                                    $("#btn-fla").css({"display":"none"}); 
+                                                    $("#btn-fla").css({"display":"none"}),
+                                                    $("#numberFALa").html(b); 
                                             });       
                                               $("#btn-flwa").click(
                                                 function(){
                                                     $("#btn-flwa").css({"display":"none"}),
-                                                    $("#btn-fla").css({"display":"block"});    
+                                                    $("#btn-fla").css({"display":"block"}),
+                                                    $("#numberFALa").html(a);    
                                             });
                                           });
                                         </script>
@@ -484,7 +568,7 @@
                                         <div class="list__Fanalsolikes__songName">
                                             <strong>Cổ Động</strong>
                                             <br>
-                                            <span><i class="fas fa-user-friends"></i> 1243</span>
+                                            <span><i class="fas fa-user-friends"></i> <span id="numberFALb">999</span></span>
                                         </div>
                                         <div class="list__Fanalsolikes__follow">
                                             <button id="btn-flb">
@@ -500,15 +584,19 @@
                                         </div>
                                         <script>
                                             $(document).ready(function(){
+                                                var a = 999
+                                                var b = 1000
                                               $("#btn-flb").click(
                                                 function(){
                                                     $("#btn-flwb").css({"display":"block"}),
-                                                    $("#btn-flb").css({"display":"none"}); 
+                                                    $("#btn-flb").css({"display":"none"}),
+                                                    $("#numberFALb").html(b); 
                                             });       
                                               $("#btn-flwb").click(
                                                 function(){
                                                     $("#btn-flwb").css({"display":"none"}),
-                                                    $("#btn-flb").css({"display":"block"});    
+                                                    $("#btn-flb").css({"display":"block"}),
+                                                    $("#numberFALb").html(a);     
                                             });
                                           });
                                         </script>

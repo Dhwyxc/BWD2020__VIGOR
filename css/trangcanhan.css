@@ -1,4 +1,4 @@
-
+/* head */
 .container-main {
     width: 1110px;
     margin: auto;
@@ -51,6 +51,57 @@
   border-radius: 5px;
   background-color: hsla(0, 0%, 0%, 0.05);
   box-shadow: 0px 0px 20px 2px rgba(128, 128, 128, 0.363);
+}
+.tcn_comment{
+  padding-top: 20px;
+  position: relative;
+  display: inline-flex;
+  width: 56%;
+  height: 35px;
+  left: 198px;
+  /* background-color: #bbbbbb21; */
+}
+.tcn_comment .heartbtn{
+  width:75%;
+  height: 25px;
+  display: flex;
+}
+.tcn_comment .playvcmt{
+  width: 25%;
+  height: 35px;
+  cursor: pointer;
+}
+.tcn_comment .heartbf{
+  width: 70px;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 2px;
+  border: 2px solid #bdbdbd;
+  color: #000000;
+  position: relative;
+}
+.tcn_comment .heartat{
+  width: 70px;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 2px;
+  border: 2px solid #ffa047;
+  color:#ffa047;
+  position: relative;
+  display: none;
+}
+#sharebtn{
+  margin-left: 3px;
+  position: relative;
+  width: 70px;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 2px;
+  border: 2px solid #bdbdbd;
+}
+.tcn_comment span{
+  font-size: 13px;
+  color: #aeaeae;
 }
 /* -------music------ */
 
@@ -120,8 +171,8 @@
 
 .mejs__controls .mejs__playpause-button {
   position: absolute !important;
-  right: 0%;
-  bottom: 95%;
+  right: 10%;
+  top: -75px;
   width: 40px;
 }
 
@@ -266,8 +317,8 @@
 .mejs__controls .mejs__volume-button {
   position: relative;
   position: absolute !important;
-  top: 70px;
-  right: 25%;
+  top: -29px;
+  right: 10%;
   width: 40px;
   height: 40px;
 }
@@ -276,9 +327,9 @@
   display: block;
   position: absolute !important;
   position: relative;
-  top: 70px;
-  right: 10%;
-  width: 60px;
+  top: -35px;
+  right: -0.5%;
+  width: 50px;
   height: 4px;
   margin-top: 18px;
   border-radius: 50px;
