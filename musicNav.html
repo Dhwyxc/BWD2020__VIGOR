@@ -66,6 +66,7 @@
                 media: function(target) {
                     var media = $('audio.fc-media', (target !== undefined) ? target : 'body');
                     if (media.length) {
+
                         media.mediaelementplayer({
                             audioHeight: 40,
                             features: ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
@@ -73,16 +74,18 @@
                             timeAndDurationSeparator: '<span></span>',
                             iPadUseNativeControls: true,
                             iPhoneUseNativeControls: true,
-                            AndroidUseNativeControls: true
+                            AndroidUseNativeControls: true,      
                         });
                     }
                 },
+                
 
             },
         };
         audio.init();
 
-        // 
+        // class="mejs__time-rail"class="mejs__button mejs__playpause-button mejs__play"
+        // let autoPlayBtn = document.querySelector(".mejs__play");
         let singer = document.getElementById("singerName");
         let song = document.getElementById("songName");
         let musicAva = document.getElementById("songAva");
@@ -91,6 +94,7 @@
         let fixedBottomNav = document.querySelector(".container-fluid.musicNav");
         let listenToMusic1 = document.querySelector(".listItem__img1");
         let listenToMusic2 = document.querySelector(".listItem__img2");
+
 
         // Singer and Song name
         let SN1 = document.createTextNode("ERIK");
@@ -108,6 +112,9 @@
             singer.removeChild(SN2);
             song.appendChild(SoN1);
             song.removeChild(SoN2);
+            // autoPlayBtn.addEventListener("click", () => {
+                
+            // })
         })
         singer.appendChild(SN2);
         song.appendChild(SoN2);
@@ -119,6 +126,10 @@
             song.appendChild(SoN2);
             song.removeChild(SoN1);
         })
+
+        // 
+       
+
     </script>
 </body>
 

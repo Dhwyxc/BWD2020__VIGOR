@@ -31,13 +31,21 @@
                                 <span class="close">&times;</span>
                                 <div class="loginContent__platform">
                                     <div class="loginContent__fb">
-                                        <div id="fb-root"></div>
-                                        <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+                                        <!-- <div id="fb-root"></div>
+                                        <div id="fbLogin-btn" class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div> -->
+                                        <div class="fbLoginbtn">
+                                            <img src="image/fbLogin-btn.jpg" alt="" width="228px" height="40px">
+                                        </div>
                                     </div>
-                                    
+                                    <script>
+                                       
+                                    </script>
                                     <div class="loginContent__gg">
-                                        <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true">
-                                            <script>
+                                        <!-- <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true"> -->
+                                        <div class="ggLoginbtn">
+                                            <img src="image/ggLoginbtn.jpg" alt=""  width="228px" height="40px">
+                                        </div>
+                                          <!-- <script>
                                                 function onSuccess(googleUser) {
                                                     console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
                                                 }
@@ -57,14 +65,14 @@
                                                         'onfailure': onFailure
                                                     });
                                                 }
-                                            </script>
+                                            </script> -->
                                         </div>
                                     </div>
                                 </div>
-                                <div class="signUp">
+                                <div class="signUp text-center" style="width: 100%;">
                                     <p id="signUp__text">Bạn chưa có tài khoản?</p>
-                                    <a id="linkSignUp" href="#">
-                                        <p id="signUp__link">Đăng ký</p>
+                                    <a id="linkSignUp" href="#" class="text-decoration-none">
+                                        <p id="signUp__link" style="color: rgb(255, 159, 103);">Đăng ký</p>
                                     </a>
                                 </div>
                             </div>
@@ -76,6 +84,7 @@
 
         <!-- Script -->
         <script>
+            const card  = document.querySelector(".card.border-0");
             const body = document.querySelector("body")
             const login = document.getElementById("nav_dangNhap");
             const loginPage = document.getElementById("myModal");
@@ -90,6 +99,16 @@
                 loginPage.style.display = "none";
                 body.style.overflowY = "scroll";
             })
+
+            let fbLogin = document.querySelector(".fbLoginbtn");
+                fbLogin.addEventListener("click", () => {
+                    loginPage.style.display = "none";
+                })
+            let ggLogin = document.querySelector(".ggLoginbtn");
+                ggLogin.addEventListener("click", () => {
+                    loginPage.style.display = "none";
+                })
+                
         </script>
 </body>
 
