@@ -21,11 +21,11 @@
     <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
-        </style>
+    </style>
 </head>
 <script>
     $(document).ready(function() {
-        $("#header").load("header.html");
+        // $("#header").load("header.html");
         $("#footer").load("footer.html");
     });
 </script>
@@ -33,6 +33,76 @@
 <body style="font-family: 'Niramit', sans-serif;">
     <!-- Header -->
     <header id="header"></header>
+    <header id="header">
+        <div class="container nav" style="font-weight: bold;">
+            <nav class="navbar">
+                <div class="nav">
+                    <div class="nav__main  mt-1">
+                        <span class="logo">
+                            <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                        </span>
+                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3"></li>
+                        <li class="nav-item first">
+                            <a class="nav-link ml-2" href="index.html" id="nav_trangChu">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <form>
+                                <input type="search" placeholder="Music, Singer,...">
+                            </form>
+                        </li>
+                    </div>
+                    <div class="nav__signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div class="userOption">
+                                <a class="nav-link__user" href="trangcanhan.html" id="nav_ava">
+                                    <img src="image/ava.jpg" alt="userAva" width="44px" height="44px">
+                                </a>
+                                <div class="uploadFile">
+                                    <label for="songUpload" class="uploadSongs">
+                                        <div class="nav-link__upload" href="#" id="nav_upload">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M8 11h-6v10h20v-10h-6v-2h8v14h-24v-14h8v2zm-1-4l5-6 5 6h-4v11h-2v-11h-4z"/></svg>
+                                        </div>
+                                    </label>
+                                    <input type="file" id="songUpload">
+                                </div>
+                            </div>
+                            <div id="Login"></div>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Script Header -->
+    <script>
+        // scroll
+        const head = document.querySelector("header");
+        const scrolll = () => {
+            if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+                head.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.1)";
+            } else {
+                head.style.boxShadow = "none";
+            }
+        }
+        window.addEventListener("scroll", scrolll);
+    </script>
+
+    <script>
+        $(function() {
+            $("#Login").load("dangNhap.html");
+        });
+    </script>
 
     <!-- Playlist -->
     <div class="container playlist">

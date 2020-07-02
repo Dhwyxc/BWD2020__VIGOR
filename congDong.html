@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/congDong.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/musicNav.css"> -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
@@ -20,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
-        #shareicon{
+        #shareicon {
             right: 36px;
             position: relative;
         }
@@ -28,14 +29,85 @@
 </head>
 <script>
     $(function() {
-        $("#header").load("header.html");
+        // $("#header").load("header.html");
         $("#notify").load("notifications.html");
+        // $("#bottomNav").load("musicNav.html");
     });
 </script>
 
 <body style="font-family: 'Niramit', sans-serif;">
     <div id="notify"></div>
-    <header id="header"></header>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav" style="font-weight: bold;">
+            <nav class="navbar">
+                <div class="nav">
+                    <div class="nav__main  mt-1">
+                        <span class="logo">
+                            <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                        </span>
+                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3"></li>
+                        <li class="nav-item first">
+                            <a class="nav-link ml-2" href="index.html" id="nav_trangChu">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <form>
+                                <input type="search" placeholder="Music, Singer,...">
+                            </form>
+                        </li>
+                    </div>
+                    <div class="nav__signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div class="userOption">
+                                <a class="nav-link__user" href="trangcanhan.html" id="nav_ava">
+                                    <img src="image/ava.jpg" alt="userAva" width="44px" height="44px">
+                                </a>
+                                <div class="uploadFile">
+                                    <label for="songUpload" class="uploadSongs">
+                                        <div class="nav-link__upload" href="#" id="nav_upload">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M8 11h-6v10h20v-10h-6v-2h8v14h-24v-14h8v2zm-1-4l5-6 5 6h-4v11h-2v-11h-4z"/></svg>
+                                        </div>
+                                    </label>
+                                    <input type="file" id="songUpload">
+                                </div>
+                            </div>
+                            <div id="Login"></div>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Script Header -->
+    <script>
+        // scroll
+        const head = document.querySelector("header");
+        const scrolll = () => {
+            if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+                head.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.1)";
+            } else {
+                head.style.boxShadow = "none";
+            }
+        }
+        window.addEventListener("scroll", scrolll);
+    </script>
+    <script>
+        $(function() {
+            $("#Login").load("dangNhap.html");
+        });
+    </script>
 
     <div class="container-main">
         <div class="hashtag">
@@ -102,22 +174,23 @@
                 </div>
             </div>
             <div class="Video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t9YDbqLfg7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t9YDbqLfg7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="post__Foot ">
                 <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
                     <a class="heart text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none">Chia sẻ</a>
-                   <iframe id="shareicon" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dt9YDbqLfg7E&layout=button&size=small&appId=297013998155426&width=76&height=20" width="1.5" height="8" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe id="shareicon" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dt9YDbqLfg7E&layout=button&size=small&appId=297013998155426&width=76&height=20" width="1.5" height="8" style="border:none;overflow:hidden;"
+                        scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
-        
+
         <div class="post-video">
             <div class="post_head pt-2 ml-2">
                 <div class="Avatar">
@@ -140,14 +213,14 @@
                 </div>
             </div>
             <div class="Video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ur_0GseFTPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ur_0GseFTPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="post__Foot ">
                 <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
                     <a class="heart text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
@@ -341,7 +414,7 @@
 
             })
         </script>
-       
+
         <div class="post-music">
             <div class="post_head pt-2 ml-2">
                 <div class="Avatar">
@@ -360,7 +433,7 @@
             </div>
             <div class="Caption__body">
                 <div class="Caption ml-3 pt-1">
-                   ...
+                    ...
                 </div>
             </div>
             <div class="Music">
@@ -385,7 +458,7 @@
                     <a class="text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
@@ -434,7 +507,7 @@
                     <a class="text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
@@ -463,14 +536,14 @@
                 </div>
             </div>
             <div class="Video">
-                <iframe width="100%" height="100%"src="https://www.youtube.com/embed/RGUJ5WqoOv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RGUJ5WqoOv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
             <!--  -->
             <div class="post__Foot ">
                 <div class="reaction text-center pt-1"><i class="far fa-heart"></i>
                     <a class="heart text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
@@ -507,7 +580,7 @@
                     <a class="heart text-muted text-decoration-none" href="">Thích</a>
                 </div>
                 <div class="comment text-center pt-1"><i class="far fa-comment-alt"></i>
-                    <a class="text-muted text-decoration-none" >Bình Luận</a>
+                    <a class="text-muted text-decoration-none">Bình Luận</a>
                 </div>
                 <div class="share text-center pt-1"><i class="far far fa-share-square"></i>
                     <a class="text-muted text-decoration-none" href="">Chia sẻ</a>
@@ -515,6 +588,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Bottom Navigation -->
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="bottomNav"></div>
 </body>
 <script>
     let heartSelect = document.querySelectorAll(".far.fa-heart").forEach(heart => {

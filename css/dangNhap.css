@@ -72,8 +72,16 @@
   margin-left: 20px;
 }
 
+.IMGModal .card .card-body .loginContent__fb .fbLoginbtn, .IMGModal .card .card-body .loginContent__gg .fbLoginbtn {
+  cursor: pointer;
+}
+
 .IMGModal .card .card-body .loginContent__gg {
   top: -10px;
+}
+
+.IMGModal .card .card-body .loginContent__gg .ggLoginbtn {
+  cursor: pointer;
 }
 
 .IMGModal .card .card-body .loginContent .signUp #signUp__text {

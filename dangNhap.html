@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/dangNhap.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
-     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
-   
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=297013998155426&autoLogAppEvents=1" nonce="QUBdfQO2"></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </head>
@@ -38,14 +38,13 @@
                                         </div>
                                     </div>
                                     <script>
-                                       
                                     </script>
                                     <div class="loginContent__gg">
                                         <!-- <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true"> -->
                                         <div class="ggLoginbtn">
-                                            <img src="image/ggLoginbtn.jpg" alt=""  width="228px" height="40px">
+                                            <img src="image/ggLoginbtn.jpg" alt="" width="228px" height="40px">
                                         </div>
-                                          <!-- <script>
+                                        <!-- <script>
                                                 function onSuccess(googleUser) {
                                                     console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
                                                 }
@@ -66,50 +65,60 @@
                                                     });
                                                 }
                                             </script> -->
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="signUp text-center" style="width: 100%;">
-                                    <p id="signUp__text">Bạn chưa có tài khoản?</p>
-                                    <a id="linkSignUp" href="#" class="text-decoration-none">
-                                        <p id="signUp__link" style="color: rgb(255, 159, 103);">Đăng ký</p>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="signUp text-center" style="width: 100%;">
+                                <p id="signUp__text">Bạn chưa có tài khoản?</p>
+                                <a id="linkSignUp" href="#" class="text-decoration-none">
+                                    <p id="signUp__link" style="color: rgb(255, 159, 103);">Đăng ký</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Script -->
-        <script>
-            const card  = document.querySelector(".card.border-0");
-            const body = document.querySelector("body")
-            const login = document.getElementById("nav_dangNhap");
-            const loginPage = document.getElementById("myModal");
-            const closeLogin = document.getElementsByClassName("close")[0];
+    <!-- Script -->
+    <script>
+        const user = document.querySelector(".userOption");
+        const card = document.querySelector(".card.border-0");
+        const body = document.querySelector("body")
+        const login = document.getElementById("nav_dangNhap");
+        const loginPage = document.getElementById("myModal");
+        const closeLogin = document.getElementsByClassName("close")[0];
 
-            // Login
-            login.addEventListener("click", () => {
-                loginPage.style.display = "block";
-                body.style.overflowY = "hidden";
-            })
-            closeLogin.addEventListener("click", () => {
-                loginPage.style.display = "none";
-                body.style.overflowY = "scroll";
-            })
+        // Login
+        login.addEventListener("click", () => {
+            loginPage.style.display = "block";
+            body.style.overflowY = "hidden";
+        })
+        closeLogin.addEventListener("click", () => {
+            loginPage.style.display = "none";
+            body.style.overflowY = "scroll";
+        })
 
-            let fbLogin = document.querySelector(".fbLoginbtn");
-                fbLogin.addEventListener("click", () => {
-                    loginPage.style.display = "none";
-                })
-            let ggLogin = document.querySelector(".ggLoginbtn");
-                ggLogin.addEventListener("click", () => {
-                    loginPage.style.display = "none";
-                })
-                
-        </script>
+        let fbLogin = document.querySelector(".fbLoginbtn");
+        fbLogin.addEventListener("click", () => {
+            loginPage.style.display = "none";
+            login.style.display = "none";
+            user.style.display = "block";
+            body.style.overflowY = "scroll";
+        })
+        window.addEventListener("load", (event) => {
+            login.style.display = "none";
+            user.style.display = "block";
+        })
+        let ggLogin = document.querySelector(".ggLoginbtn");
+        ggLogin.addEventListener("click", () => {
+            loginPage.style.display = "none";
+            login.style.display = "none";
+            user.style.display = "block";
+            body.style.overflowY = "scroll";
+        })
+    </script>
 </body>
 
 </html>

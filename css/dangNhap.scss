@@ -52,10 +52,16 @@
                     position: relative;
                     top: -25px;
                     margin-left: 20px;
+                    .fbLoginbtn {
+                        cursor: pointer;
+                    }
                 }
                 &__gg {
                     @extend .loginContent__fb;
                     top: -10px;
+                    .ggLoginbtn {
+                        cursor: pointer;
+                    }
                 }
                 .signUp {
                     #signUp__text {
@@ -79,5 +85,4 @@
             }
         }
     }
-
 }
