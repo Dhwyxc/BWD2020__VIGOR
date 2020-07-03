@@ -31,8 +31,6 @@
                                 <span class="close">&times;</span>
                                 <div class="loginContent__platform">
                                     <div class="loginContent__fb">
-                                        <!-- <div id="fb-root"></div>
-                                        <div id="fbLogin-btn" class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div> -->
                                         <div class="fbLoginbtn">
                                             <img src="image/fbLogin-btn.jpg" alt="" width="228px" height="40px">
                                         </div>
@@ -40,31 +38,9 @@
                                     <script>
                                     </script>
                                     <div class="loginContent__gg">
-                                        <!-- <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true"> -->
                                         <div class="ggLoginbtn">
                                             <img src="image/ggLoginbtn.jpg" alt="" width="228px" height="40px">
                                         </div>
-                                        <!-- <script>
-                                                function onSuccess(googleUser) {
-                                                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                                                }
-
-                                                function onFailure(error) {
-                                                    console.log(error);
-                                                }
-
-                                                function renderButton() {
-                                                    gapi.signin2.render('my-signin2', {
-                                                        'scope': 'profile email',
-                                                        'width': 280,
-                                                        'height': 1,
-                                                        'longtitle': true,
-                                                        'theme': 'dark',
-                                                        'onsuccess': onSuccess,
-                                                        'onfailure': onFailure
-                                                    });
-                                                }
-                                            </script> -->
                                     </div>
                                 </div>
                             </div>
@@ -107,10 +83,10 @@
             user.style.display = "block";
             body.style.overflowY = "scroll";
         })
-        window.addEventListener("load", (event) => {
-            login.style.display = "none";
-            user.style.display = "block";
-        })
+        // window.addEventListener("load", (event) => {
+        //     login.style.display = "none";
+        //     user.style.display = "block";
+        // })
         let ggLogin = document.querySelector(".ggLoginbtn");
         ggLogin.addEventListener("click", () => {
             loginPage.style.display = "none";
