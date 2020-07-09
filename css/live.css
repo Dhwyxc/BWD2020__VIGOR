@@ -1,0 +1,114 @@
+.live__Header__Video{
+    width: 100%;
+    height: 680px;
+    /* background-color: azure; */
+    padding: 20px;
+    border-radius: 10px;
+}
+.live__Header__Video__content{
+    width: 100%;
+    border-radius: 5px;
+    height: 480px;
+    background-color: black;
+}
+.live__Header__Video__caption{
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 140px;
+    /* background-color: goldenrod; */
+    padding: 5px;
+    display: flex
+}
+.live__Header__Video__caption__avatar{
+    width: 100%;
+    height: 90px;
+    margin-top: 70px;
+    position: absolute;
+    display: flex;
+    /* background-color: rgba(137, 43, 226, 0.17); */
+}
+.live__Header__Video__caption__avatar .avatar{
+    width: 10%;
+}
+.live__Header__Video__caption__avatar .name{
+    width: 60%;
+}
+.live__Header__Video__caption__avatar .follow{
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 35px;
+}
+.live__Header__Video__caption__avatar .follow button{
+    width: 130px;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #acacac;
+    border: 2px solid #acacac;
+}
+.live__Header__Video__caption__Tieude{
+    width: 70%;
+    height: 50px;
+    padding-bottom: 60px;
+}
+.live__Header__Video__caption__TuongTac{
+    width: 30%;
+    height: 50px;
+    padding-bottom: 60px;
+}
+.live__Header__Video__caption__TuongTac button{
+    background-color: transparent;
+    outline: none;
+    color: #acacac;
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #bdbdbd;
+    /* border: 2px solid #bdbdbd; */
+    width: 90px;
+    font-size: 15px;
+    height: 28px;
+}
+.live__Header__Comment{
+    width: 100%;
+    padding: 20px;
+    /* background-color: azure; */
+    border-radius: 10px;
+}
+.live__Header__Comment__content{
+    width: 100%;
+    border-radius: 5px;
+    height: 640px;
+    background-color: black;
+}
+.col-5.live__DeXuat__content{
+    padding: 5px;
+    width: 100%;
+    height: 140px;
+}
+.col-5.live__DeXuat__content iframe{
+    border-radius: 5px;
+}
+.col-7.live__DeXuat__content{
+    width: 98%;
+    border-radius: 5px;
+    /* background-color: #acacac; */
+    padding-top: 3px;
+}
+.col-7.live__DeXuat__content span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.col-7.live__DeXuat__content span button{
+    background-color: transparent;
+    outline: none;
+    height: 27px;
+    width: 80px;
+    border-radius: 3px;
+    border: 2px solid red;
+    color: red;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE - Vigor</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/live.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/musicNav.css">
+    <link rel="stylesheet" href="css/dangNhap.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico/favicon.ico" type="image/x-icon">
+    <!--  -->
+    <script src="node_modules/jquery/dist/player.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
+    </style>
+</head>
+<!-- Load Header and Footer -->
+<script>
+    $(document).ready(function() {
+        // $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#notify").load("notifications.html");
+    });
+</script>
+
+<body style="font-family: 'Niramit', sans-serif;">
+
+    <div id="notify"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav" style="font-weight: bold;">
+            <nav class="navbar">
+                <div class="nav">
+                    <div class="nav__main  mt-1">
+                        <span class="logo">
+                            <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                        </span>
+                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3"></li>
+                        <li class="nav-item first">
+                            <a class="nav-link ml-2" href="index.html" id="nav_trangChu">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <form>
+                                <input type="search" placeholder="Music, Singer,...">
+                            </form>
+                        </li>
+                    </div>
+                    <div class="nav__signUp">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div class="userOption">
+                                <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
+                                    <img src="image/image.jpg" alt="userAva" width="44px" height="44px">
+                                </a>
+                                <div class="uploadFile">
+                                    <label for="songUpload" class="uploadSongs">
+                                        <div class="nav-link__upload" href="#" id="nav_upload">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M8 11h-6v10h20v-10h-6v-2h8v14h-24v-14h8v2zm-1-4l5-6 5 6h-4v11h-2v-11h-4z"/></svg>
+                                        </div>
+                                    </label>
+                                    <input type="file" id="songUpload">
+                                </div>
+                            </div>
+                            <div id="Login"></div>
+                        </li>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Script Header -->
+    <script>
+        // scroll
+        const head = document.querySelector("header");
+        const scrolll = () => {
+            if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+                head.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.1)";
+            } else {
+                head.style.boxShadow = "none";
+            }
+        }
+        window.addEventListener("scroll", scrolll);
+    </script>
+
+    <script>
+        $(function() {
+            $("#Login").load("dangNhap.html");
+        });
+    </script>
+    <div class="container">
+        <div class="row live__Header">
+            <div class="col-8 live__Header__Video">
+                <div class="live__Header__Video__content">
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="live__Header__Video__caption">
+                    <div class="live__Header__Video__caption__Tieude border-bottom">
+                        <h5>LoFi hip hop Radio</h5>
+                        <p style="color: #acacac;">31,125 người đang xem. Đã phát trực tiếp vào 09 thg 7, 2020 </p>
+                    </div>
+                    <div class="live__Header__Video__caption__TuongTac border-bottom">
+                        <button><i class="fas fa-heart"></i> 6.7M</button>
+                        <button><i class="far fa-share-square"></i> Chia sẻ</button>
+                    </div>
+                    <div class="live__Header__Video__caption__avatar">
+                        <div class="avatar">
+                        <img src="image/lofi.jpg" alt="" width="55px" class="rounded-circle">
+                        </div>
+                        <div class="name">
+                            <span class="h3">ChilledCow</span>
+                            <br>
+                            <span style="color: #acacac;">5.7M người theo dõi</span>
+                        </div>
+                        <div class="follow">
+                            <button><i class="fas fa-user-plus"></i> Theo dõi</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-4 live__Header__Comment">
+                <div class="live__Header__Comment__content">
+                </div>
+            </div>
+        </div> 
+        <div class="live__DeXuat__caption h5 text-muted mt-4">Tiếp theo</div>
+        <div class="row live__DeXuat mb-3">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row live__DeXuat">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row live__DeXuat">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5 live__DeXuat__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fH0mFVGbsTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-7 live__DeXuat__content">
+                        <span>
+                            24-7 lofi hip hop radio - late nite chat - every night 8pm-4am 
+                        </span>
+                        <br>
+                        <span class="text-muted font-weight-normal" style="font-size: 15px;">
+                            Nickolaas
+                            <br>
+                            17M lượt xem
+                            <br>
+                            <button style="font-size: 14px;">TRỰC TIẾP</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+
+    <!-- Footer -->
+    <!-- <div id="footer"></div> -->
+</body>
+
+</html>
