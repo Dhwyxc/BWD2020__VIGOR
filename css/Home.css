@@ -681,6 +681,163 @@ h2 {
 }
 
 .topCover img, .topSangTac img, .baiHatMoi img {
-  border-radius: 7px;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 424px;
+  }
+  #notify {
+    display: none;
+  }
+  header {
+    z-index: 15;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  header .container.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100px;
+    width: 424px;
+  }
+  header .container.nav .navbar {
+    height: 100px;
+    width: 424px;
+  }
+  header .container.nav .navbar .nav {
+    height: 100px;
+    width: 424px;
+  }
+  header .container.nav .navbar .nav .nav__main {
+    height: 100px;
+    width: 424px;
+  }
+  header .container.nav .navbar .nav .nav__main .logoDiv {
+    position: absolute;
+    top: 8%;
+    left: 35%;
+  }
+  header .container.nav .navbar .nav .nav__main .logoDiv img {
+    width: 100px;
+    height: 32px;
+  }
+  header .container.nav .navbar .nav .nav__main #border {
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main .nav-item.first {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  header .container.nav .navbar .nav .nav__main .nav-item.congDong {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+  }
+  header .container.nav .navbar .nav .nav__main .nav-item.live {
+    position: absolute;
+    top: 50%;
+    left: 80.5%;
+  }
+  header .container.nav .navbar .nav .nav__main .nav-item.faqs {
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: 50%;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search] {
+    background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+    border: solid 1px #efefef;
+    padding: 8px 15px;
+    width: 0px;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: absolute;
+    top: 8%;
+    left: 160%;
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search]::-webkit-input-placeholder {
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search]:-ms-input-placeholder {
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search]::-ms-input-placeholder {
+    display: none;
+  }
+  header .container.nav .navbar .nav .nav__main input[type=search]::placeholder {
+    display: none;
+  }
+  header .container.nav .navbar .nav__signUp .dangNhapDiv {
+    position: absolute;
+    top: 6%;
+    left: 73.5%;
+  }
+  header .container.nav .navbar .nav__signUp .userDiv {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: absolute;
+    top: 8%;
+    left: 92.2%;
+  }
+  header .container.nav .navbar .nav__signUp .userDiv img {
+    width: 32px;
+    height: 32px;
+  }
+  header .container.nav .navbar .nav__signUp .uploadFile {
+    display: none;
+  }
+  .container.slide {
+    margin-bottom: 30px;
+  }
+  .slick-list {
+    height: 30vh;
+  }
+  .slick-slide img {
+    height: 30vh;
+  }
+  canvas {
+    margin-bottom: 30px;
+  }
+  .list__item .listItem__number {
+    font-size: 14px;
+    width: 15px;
+  }
+  .list__item .listItem__img1 img,
+  .list__item .listItem__img2 img,
+  .list__item .listItem__img img {
+    width: 45px;
+    height: 45px;
+  }
+  .list__item .listItem__content {
+    font-size: 14px;
+  }
+  .list__item .listItem__additional {
+    display: none;
+  }
+  .col-md-5.BXHNdeXuat {
+    width: 394px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .col-md-5.BXHNdeXuat .listDeXuat {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

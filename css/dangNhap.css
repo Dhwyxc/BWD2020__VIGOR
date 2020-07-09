@@ -100,4 +100,29 @@
   color: #ff9f67;
   margin-left: 105px;
 }
+
+@media all and (max-width: 768px) {
+  .IMGModal .card {
+    width: 300px;
+    height: 400px;
+  }
+  .IMGModal .card .card-body .loginImg {
+    margin-bottom: 50px;
+  }
+  .IMGModal .card .card-body .loginContent h6 {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: -10px;
+    font-weight: bold;
+  }
+  .IMGModal .card .card-body .loginContent .close {
+    position: relative;
+    top: -165px;
+    left: 20px;
+    z-index: 5;
+  }
+  .IMGModal .card .card-body .loginContent .loginContent__platform .loginContent__fb, .IMGModal .card .card-body .loginContent .loginContent__platform .loginContent__gg {
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=dangNhap.css.map */

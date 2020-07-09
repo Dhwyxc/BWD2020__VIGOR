@@ -48,23 +48,25 @@
             <nav class="navbar">
                 <div class="nav">
                     <div class="nav__main  mt-1">
-                        <span class="logo">
-                            <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
-                        </span>
-                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3"></li>
+                        <div class="logoDiv">
+                            <span class="logo">
+                                <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                            </span>
+                        </div>
+                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3" id="border"></li>
                         <li class="nav-item first">
                             <a class="nav-link ml-2" href="index.html" id="nav_trangChu">Trang chủ</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item congDong">
                             <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        <li class="nav-item live">
+                            <a class="nav-link" href="live.html" id="nav_LIVE">LIVE</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item faqs">
                             <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item search">
                             <form>
                                 <input type="search" placeholder="Music, Singer,...">
                             </form>
@@ -72,11 +74,15 @@
                     </div>
                     <div class="nav__signUp">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            <div class="dangNhapDiv">
+                                <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a>
+                            </div>
                             <div class="userOption">
-                                <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
-                                    <img src="image/image.jpg" alt="userAva" width="44px" height="44px">
-                                </a>
+                                <div class="userDiv">
+                                    <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
+                                        <img src="image/image.jpg" alt="userAva" width="44px" height="44px">
+                                    </a>
+                                </div>
                                 <div class="uploadFile">
                                     <label for="songUpload" class="uploadSongs">
                                         <div class="nav-link__upload" href="#" id="nav_upload">
@@ -188,12 +194,12 @@
                                     </div>
                                     <div class="listItem__img2">
                                         <a class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/d/f/c/ddfc0c54f8c99b517539cc11c24f6b88.jpg" alt="listImg" width="50px" height="50px" class="rounded" id="IMG2_BXH">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/a/5/1/5a5164496ababbca1496193ec8b8afb1.jpg" alt="listImg" width="50px" height="50px" class="rounded" id="IMG2_BXH">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
                                     <div class="listItem__content">
-                                        <span>Bảo Yến Rosie, Great - <strong>Cướp Đi Cả Thế Giới</strong> </span>
+                                        <span>Binz, Touliver - <strong>Bigcityboi</strong> </span>
                                     </div>
                                 </div>
                                 <div class="listItem__additional">
@@ -230,12 +236,12 @@
                                     </div>
                                     <div class="listItem__img">
                                         <a class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/7/8/6/17861cfa5213a52daec2c556101fb421.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/a/9/e/d/a9ed142c215560ab45f6b2b433907f90.jpg" alt="listImg" width="50px" height="50px" class="rounded">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
                                     <div class="listItem__content">
-                                        <span>Hòa Minzy, Mr.Siro - <strong>Không Thể Cùng Nhau Suốt Kiếp</strong> </span>
+                                        <span>Đức Phúc - <strong>Hơn Cả Yêu</strong> </span>
                                     </div>
                                 </div>
                                 <div class="listItem__additional">
@@ -482,12 +488,12 @@
                                     </div>
                                     <div class="listItem__img">
                                         <a class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/5/a/6/95a6dc0b77b93e4ecbbf23235a7f2b50.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg" alt="listImg" width="50px" height="50px" class="rounded">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
                                     <div class="listItem__content">
-                                        <span>Doãn Hiếu - <strong>Tình Sầu Thiên Thu Muôn Lối</strong> </span>
+                                        <span>Đạt G, DuUyen - <strong>Bánh Mì Không</strong> </span>
                                     </div>
                                 </div>
                                 <div class="listItem__additional">
@@ -545,12 +551,12 @@
                                     </div>
                                     <div class="listItem__img">
                                         <a class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/9/a/c/d9acd277ca311a01abefcc4e683ec846.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/6/7/4/8/6748158e7a6e0d405266aeeb99d98ff9.jpg" alt="listImg" width="50px" height="50px" class="rounded">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
                                     <div class="listItem__content">
-                                        <span>Vũ Duy Khánh, Đạt G - <strong>Chỉ Khi Anh Một Mình</strong> </span>
+                                        <span>Minh Vương M4U - <strong>Chỉ Khi Anh Một Mình</strong> </span>
                                     </div>
                                 </div>
                                 <div class="listItem__additional">
@@ -566,12 +572,12 @@
                                     </div>
                                     <div class="listItem__img">
                                         <a class="listItem__link">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/7/2/8/d728b8ebfe33992bd28c06cf3c192f51.jpg" alt="listImg" width="50px" height="50px" class="rounded">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/5/3/f/353f305006cc99e50ef00877e4135d0e.jpg" alt="listImg" width="50px" height="50px" class="rounded">
                                         </a>
                                         <i class="fa fa-play"></i>
                                     </div>
                                     <div class="listItem__content">
-                                        <span>Gia Huy Singer - <strong>Khóc Cho Người Ai Khóc Cho Anh</strong> </span>
+                                        <span>Jack, K-ICM - <strong>Em Gì Ơi</strong> </span>
                                     </div>
                                 </div>
                                 <div class="listItem__additional">
@@ -607,7 +613,7 @@
                     })
                 });
             </script>
-            <div class="col-md-5 BXH&deXuat">
+            <div class="col-md-5 BXHNdeXuat">
                 <ul class="listDeXuat list-unstyled">
                     <li class="listDeXuat__item">
                         <div class="listDeXuat__content">

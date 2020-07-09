@@ -86,3 +86,40 @@
         }
     }
 }
+
+@media all and (max-width: 768px) {
+    .IMGModal {
+        // width: 300px;
+        // height: 400px;
+        .card {
+            width: 300px;
+            height: 400px;
+            .card-body {
+                // width: 300px;
+                // height: 400px;
+                .loginImg {
+                    margin-bottom: 50px;
+                }
+                .loginContent {
+                    h6 {
+                        font-size: 12px;
+                        text-align: center;
+                        margin-bottom: -10px;
+                        font-weight: bold;
+                    }
+                    .close {
+                        position: relative;
+                        top: -165px;
+                        left: 20px;
+                        z-index: 5;
+                    }
+                    .loginContent__platform {
+                        .loginContent__fb {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

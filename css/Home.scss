@@ -40,7 +40,7 @@ body {
 
 canvas {
     // background: url('https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.5/images/bg-chart.jpg');
-    background: linear-gradient(180deg, rgba(255, 159, 103, 0.514) 0%,  rgb(255, 159, 103) 100%);
+    background: linear-gradient(180deg, rgba(255, 159, 103, 0.514) 0%, rgb(255, 159, 103) 100%);
     border-radius: 10px;
 }
 
@@ -89,11 +89,13 @@ canvas {
         }
     }
 }
-.col-md-5{
+
+.col-md-5 {
     padding-top: 10px;
     background-color: #fcfcfc;
     border-radius: 10px;
 }
+
 .list__item {
     margin-bottom: 10px;
 }
@@ -386,7 +388,7 @@ h2 {
         }
     }
     img {
-        border-radius: 7px;
+        border-radius: 10px;
     }
 }
 
@@ -398,49 +400,152 @@ h2 {
     @extend .topCover;
 }
 
-// .container-fluid {
-//     background-color: black;
-//     .container.Ft {
-//         font-weight: 600;
-//         .logo.m-0 {
-//             margin-left: 0px;
-//             position: relative;
-//             top: -32px;
-//         }
-//         a {
-//             color: white;
-//             &:hover {
-//                 text-decoration: none;
-//                 color: $primaryColor;
-//             }
-//         }
-//         .congTy__item,
-//         .congDong__item,
-//         .lienKet__item {
-//             p {
-//                 font-weight: 700;
-//                 color: $grayColor;
-//             }
-//         }
-//         .link-item {
-//             font-size: 12px;
-//         }
-//         .country {
-//             a {
-//                 font-size: 12px;
-//             }
-//             p {
-//                 font-size: 12px;
-//             }
-//         }
-//     }
-//     .socialMedia {
-//         i {
-//             color: $whiteColor;
-//             font-size: 44px;
-//             &:hover {
-//                 color: $primaryColor;
-//             }
-//         }
-//     }
-// }
+@media all and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+        width: 424px;
+    }
+    #notify {
+        display: none;
+    }
+    header {
+        z-index: 15;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        .container.nav {
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            width: 424px;
+            .navbar {
+                height: 100px;
+                width: 424px;
+                .nav {
+                    height: 100px;
+                    width: 424px;
+                    .nav__main {
+                        height: 100px;
+                        width: 424px;
+                        .logoDiv {
+                            position: absolute;
+                            top: 8%;
+                            left: 35%;
+                            img {
+                                width: 100px;
+                                height: 32px;
+                            }
+                        }
+                        #border {
+                            display: none;
+                        }
+                        .nav-item.first {
+                            position: absolute;
+                            top: 50%;
+                            left: 0%;
+                        }
+                        .nav-item.congDong {
+                            position: absolute;
+                            top: 50%;
+                            left: 38%;
+                        }
+                        .nav-item.live {
+                            position: absolute;
+                            top: 50%;
+                            left: 80.5%;
+                        }
+                        .nav-item.faqs {
+                            display: none;
+                        }
+                        input[type=search] {
+                            -webkit-appearance: textfield;
+                            -webkit-box-sizing: content-box;
+                            box-sizing: content-box;
+                            font-family: inherit;
+                            font-size: 50%;
+                        }
+                        input[type=search] {
+                            background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+                            border: solid 1px #efefef;
+                            padding: 8px 15px;
+                            width: 0px;
+                            border-radius: 10em;
+                            -webkit-transition: all .5s;
+                            transition: all .5s;
+                            position: absolute;
+                            top: 8%;
+                            left: 160%;
+                            display: none;
+                        }
+                        input[type=search]::placeholder {
+                            display: none;
+                        }
+                    }
+                }
+                .nav__signUp {
+                    .dangNhapDiv {
+                        position: absolute;
+                        top: 6%;
+                        left: 73.5%;
+                    }
+                    .userDiv {
+                        transition: all .5s;
+                        position: absolute;
+                        top: 8%;
+                        left: 92.2%;
+                        img {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    .uploadFile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .container.slide {
+        margin-bottom: 30px;
+    }
+    .slick-list {
+        height: 30vh;
+    }
+    .slick-slide img {
+        height: 30vh;
+    }
+    canvas {
+        margin-bottom: 30px;
+    }
+    .list__item {
+        .listItem__number {
+            font-size: 14px;
+            width: 15px;
+        }
+        .listItem__img1,
+        .listItem__img2,
+        .listItem__img {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        .listItem__content {
+            font-size: 14px;
+        }
+        .listItem__additional {
+            display: none;
+        }
+    }
+    .col-md-5.BXHNdeXuat {
+        width: 394px;
+        margin: auto;
+        margin-top: 30px;
+        // padding: 0 30px;
+        .listDeXuat {
+            font-size: 14px;
+            // padding: 0 15px;
+        }
+    }
+}
