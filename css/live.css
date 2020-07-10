@@ -53,6 +53,8 @@
     background-color: transparent;
     color: #acacac;
     border: 2px solid #acacac;
+    position: absolute;
+    outline: none;
 }
 
 .live__Header__Video__caption__Tieude {

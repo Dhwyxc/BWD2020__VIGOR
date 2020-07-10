@@ -132,8 +132,22 @@
                             <span style="color: #acacac;">5.7M người theo dõi</span>
                         </div>
                         <div class="follow">
-                            <button><i class="fas fa-user-plus"></i> Theo dõi</button>
+                            <button id="FLL"><i class="fas fa-user-plus"></i> Theo dõi</button>
+                            <button id="FLLG" style=" display: none; background-color:#ff9f67; color: white; border: 2px solid #ff9f67; outline: none;"><i class="fas fa-user-check"></i> Đã theo dõi</button>
                         </div>
+                        <script>
+                            let btnfl = document.getElementById("FLL");
+                            let btnflg = document.getElementById("FLLG");
+                            let btnflA = document.querySelector("#FLL");
+                            let btnflgA = document.querySelector("#FLLG");
+                            // let btnfl = document.getElementsByClassName("FLL");
+                            btnfl.addEventListener("click", () => {
+                                btnflgA.style.display = "block";
+                            })
+                            btnflg.addEventListener("click", () => {
+                                btnflgA.style.display = "none";
+                            })
+                        </script>
                     </div>
                 </div>
             </div>
