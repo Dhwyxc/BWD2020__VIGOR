@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="423517631775-4q9sfcr1ui7ledoqkad6oofieekpt5n7.apps.googleusercontent.com">
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="css/dangNhap.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=297013998155426&autoLogAppEvents=1" nonce="QUBdfQO2"></script>
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 
 <body>
@@ -39,7 +40,18 @@
                                     </script>
                                     <div class="loginContent__gg">
                                         <div class="ggLoginbtn">
-                                            <img src="image/ggLoginbtn.jpg" alt="" width="228px" height="40px">
+                                            <!-- <img src="image/ggLoginbtn.jpg" alt="" width="228px" height="40px"> -->
+
+                                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                            <script>
+                                                function onSignIn(googleUser) {
+                                                    var profile = googleUser.getBasicProfile();
+                                                    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                                                    console.log('Name: ' + profile.getName());
+                                                    console.log('Image URL: ' + profile.getImageUrl());
+                                                    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                                                }
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
@@ -78,15 +90,15 @@
 
         let fbLogin = document.querySelector(".fbLoginbtn");
         fbLogin.addEventListener("click", () => {
-            loginPage.style.display = "none";
-            login.style.display = "none";
-            user.style.display = "block";
-            body.style.overflowY = "scroll";
-        })
-        // window.addEventListener("load", (event) => {
-        //     login.style.display = "none";
-        //     user.style.display = "block";
-        // })
+                loginPage.style.display = "none";
+                login.style.display = "none";
+                user.style.display = "block";
+                body.style.overflowY = "scroll";
+            })
+            // window.addEventListener("load", (event) => {
+            //     login.style.display = "none";
+            //     user.style.display = "block";
+            // })
         let ggLogin = document.querySelector(".ggLoginbtn");
         ggLogin.addEventListener("click", () => {
             loginPage.style.display = "none";
