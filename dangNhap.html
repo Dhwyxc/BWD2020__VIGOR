@@ -49,6 +49,8 @@
                                                     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                                                     console.log('Name: ' + profile.getName());
                                                     console.log('Image URL: ' + profile.getImageUrl());
+                                                    const ava = document.getElementById("nav_ava-user");
+                                                    ava.src = profile.getImageUrl();
                                                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                                                 }
                                             </script>
@@ -71,6 +73,8 @@
 
     <!-- Script -->
     <script>
+        const ava = document.getElementById("nav_ava-user");
+        const gg = document.querySelector(".ggLoginbtn");
         const user = document.querySelector(".userOption");
         const card = document.querySelector(".card.border-0");
         const body = document.querySelector("body")
@@ -80,9 +84,12 @@
 
         // Login
         login.addEventListener("click", () => {
-            loginPage.style.display = "block";
-            body.style.overflowY = "hidden";
-        })
+                loginPage.style.display = "block";
+                body.style.overflowY = "hidden";
+            })
+            // gg.addEventListener("click", () => {
+            //     ava.
+            // })
         closeLogin.addEventListener("click", () => {
             loginPage.style.display = "none";
             body.style.overflowY = "scroll";
