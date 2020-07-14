@@ -635,6 +635,7 @@
       overflow-x: hidden;
       width: 414px;
     }
+    
     header {
       z-index: 15;
       position: -webkit-sticky;
@@ -726,6 +727,9 @@
     header .container.nav .navbar .nav .nav__main input[type=search]::placeholder {
       display: none;
     }
+    .nav__signUp{
+      width: 0px;
+    }
     header .container.nav .navbar .nav__signUp .dangNhapDiv {
       position: absolute;
       top: 6%;
@@ -753,15 +757,23 @@
       margin-left: 107px;
     }
     #profile{
-    width: 414px;
+    margin-left:190px ;
+    width: 100px;
     top: 310px;
     background-color: transparent;
     position: absolute;
+    }
+    .row{
+      width: 414px;
+    }
+    .container-main{
+      width: 414px;
     }
     #profile a{
       color: black;
       font-weight: 600; 
       margin-left: -24%;
+      width: 100px;
     }
     #profile span{
       display: none;
@@ -775,6 +787,11 @@
     .col-md-8{
       width: 414px;
       top: 150px;
+    }
+    .TCN__Body{
+      margin-right: 0;
+      padding-left: 0;
+      width: 414px;
     }
     .col-md-8 .item__top{
       width: 414px;
