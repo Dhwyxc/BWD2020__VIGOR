@@ -60,7 +60,9 @@ canvas {
 .BXH__list {
     background-color: #fcfcfc;
     padding: 15px;
+    padding-top: 20px;
     border-radius: 10px;
+    height: 330px;
     // background: linear-gradient(135deg, rgb(126, 125, 124) 0%, rgb(126, 125, 124) 100%);
     &:hover {
         .list.list-unstyled::-webkit-scrollbar {
@@ -80,7 +82,7 @@ canvas {
         &::-webkit-scrollbar {
             display: none;
             margin-left: 0;
-            width: 12px;
+            width: 7px;
         }
         &::-webkit-scrollbar-thumb {
             background: rgba(0, 0, 0, .3);
@@ -90,12 +92,12 @@ canvas {
     }
 }
 
-.col-md-5 {
-    padding-top: 10px;
+.contentdeXuat{
+    padding: 10px;
     background-color: #fcfcfc;
     border-radius: 10px;
+    height: 91.5%;
 }
-
 .list__item {
     margin-bottom: 10px;
 }
@@ -252,7 +254,7 @@ canvas {
 }
 
 .container.theLoai {
-    margin-top: 10px;
+    margin-top: -15px;
     h2 {
         color: $primaryBlackColor;
     }
@@ -516,7 +518,13 @@ h2 {
         height: 30vh;
     }
     canvas {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+    }
+    .BXH__list{
+        height: 300px;
+        .list.list-unstyled{
+            height: 275px;
+        }
     }
     .list__item {
         .listItem__number {
@@ -539,13 +547,40 @@ h2 {
         }
     }
     .col-md-5.BXHNdeXuat {
-        width: 394px;
+        width: 100%;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         // padding: 0 30px;
         .listDeXuat {
             font-size: 14px;
             // padding: 0 15px;
         }
     }
+    .slide__topCover{
+        height: 200px;
+            div {
+                  img{
+                      height: 200px;
+                   }
+            }
+    } 
+    .slide__topSangTac{
+        height: 200px;
+            div {
+                  img{
+                      height: 200px;
+                   }
+            }
+    } 
+    .slide__baiHatMoi{
+        height: 200px;
+            div {
+                  img{
+                      height: 200px;
+                   }
+            }
+    } 
+        
+       
 }

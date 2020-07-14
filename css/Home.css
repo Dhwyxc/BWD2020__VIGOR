@@ -47,7 +47,9 @@ canvas {
 .BXH__list {
   background-color: #fcfcfc;
   padding: 15px;
+  padding-top: 20px;
   border-radius: 10px;
+  height: 330px;
   margin-top: 40px;
 }
 
@@ -68,7 +70,7 @@ canvas {
 .BXH__list .list.list-unstyled::-webkit-scrollbar {
   display: none;
   margin-left: 0;
-  width: 12px;
+  width: 7px;
 }
 
 .BXH__list .list.list-unstyled::-webkit-scrollbar-thumb {
@@ -77,10 +79,11 @@ canvas {
   border: 1px solid #efefef;
 }
 
-.col-md-5 {
-  padding-top: 10px;
+.contentdeXuat {
+  padding: 10px;
   background-color: #fcfcfc;
   border-radius: 10px;
+  height: 91.5%;
 }
 
 .list__item {
@@ -259,7 +262,7 @@ canvas {
 }
 
 .container.theLoai {
-  margin-top: 10px;
+  margin-top: -15px;
 }
 
 .container.theLoai h2 {
@@ -814,7 +817,13 @@ h2 {
     height: 30vh;
   }
   canvas {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .BXH__list {
+    height: 300px;
+  }
+  .BXH__list .list.list-unstyled {
+    height: 275px;
   }
   .list__item .listItem__number {
     font-size: 14px;
@@ -833,12 +842,31 @@ h2 {
     display: none;
   }
   .col-md-5.BXHNdeXuat {
-    width: 394px;
+    width: 100%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
   .col-md-5.BXHNdeXuat .listDeXuat {
     font-size: 14px;
+  }
+  .slide__topCover {
+    height: 200px;
+  }
+  .slide__topCover div img {
+    height: 200px;
+  }
+  .slide__topSangTac {
+    height: 200px;
+  }
+  .slide__topSangTac div img {
+    height: 200px;
+  }
+  .slide__baiHatMoi {
+    height: 200px;
+  }
+  .slide__baiHatMoi div img {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=Home.css.map */
