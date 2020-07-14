@@ -34,7 +34,7 @@
 <!-- Load Header and Footer -->
 <script>
     $(document).ready(function() {
-        $("#header").load("header.html");
+        // $("#header").load("header.html");
         $("#footer").load("footer.html");
         $("#notify").load("notifications.html");
         $("#bottomNav").load("musicNav.html");
@@ -45,8 +45,7 @@
 
     <div id="notify"></div>
     <!-- Header -->
-    <header id="header"></header>
-    <!-- <header id="header">
+    <header id="header">
         <div class="container nav" style="font-weight: bold;">
             <nav class="navbar">
                 <div class="nav">
@@ -103,7 +102,7 @@
                 </div>
             </nav>
         </div>
-    </header> -->
+    </header>
     <!-- Script Header -->
     <script>
         // scroll
@@ -150,7 +149,7 @@
         $(document).ready(function() {
             $('.slide').slick({
                 autoplay: true,
-                autoplaySpeed: 4321,
+                autoplaySpeed: 3000,
                 dots: false,
             });
         });
@@ -160,7 +159,6 @@
     <div class="container BXH&deXuat">
         <div class="row BXH&deXuat">
             <div class="col-md-7 BXH&deXuat">
-                <h2 style="font-weight: 600;color: #32323d; margin-top: 5px;">BXH Vigor</h2>
                 <div class="BXH__chart">
                     <canvas id="viChart" width="100%" height="80px"></canvas>
                 </div>
@@ -618,8 +616,7 @@
                 });
             </script>
             <div class="col-md-5 BXHNdeXuat">
-                  <h2 style="font-weight: 600;color: #32323d;">Đề Xuất</h2>
-                  <ul class="listDeXuat list-unstyled">
+                <ul class="listDeXuat list-unstyled">
                     <li class="listDeXuat__item">
                         <div class="listDeXuat__content">
                             <div class="listDeXuat__songImg">
