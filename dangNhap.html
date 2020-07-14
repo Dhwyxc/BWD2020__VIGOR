@@ -14,6 +14,7 @@
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=297013998155426&autoLogAppEvents=1" nonce="QUBdfQO2"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 </head>
 
@@ -42,16 +43,41 @@
                                         <div class="ggLoginbtn">
                                             <!-- <img src="image/ggLoginbtn.jpg" alt="" width="228px" height="40px"> -->
 
-                                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                                            <div class="g-signin2" data-width="228" data-height="40" data-longtitle="true"></div>
                                             <script>
-                                                function onSignIn(googleUser) {
+                                                // function onSignIn(googleUser) {
+                                                //     var profile = googleUser.getBasicProfile();
+                                                //     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                                                //     console.log('Name: ' + profile.getName());
+                                                //     console.log('Image URL: ' + profile.getImageUrl());
+                                                //     const ava = document.getElementById("nav_ava-user");
+                                                //     ava.src = profile.getImageUrl();
+                                                //     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+                                                // }
+
+                                                function onSuccess(googleUser) {
                                                     var profile = googleUser.getBasicProfile();
-                                                    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                                                    console.log('Name: ' + profile.getName());
-                                                    console.log('Image URL: ' + profile.getImageUrl());
+                                                    console.log('Logged in as: ' + profile.getName());
                                                     const ava = document.getElementById("nav_ava-user");
                                                     ava.src = profile.getImageUrl();
-                                                    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                                                }
+
+                                                function onFailure(error) {
+                                                    console.log(error);
+                                                }
+
+                                                function renderButton() {
+                                                    gapi.signin2.render('my-signin2', {
+                                                        'scope': 'profile email',
+                                                        'width': 280,
+                                                        'height': 1,
+                                                        'longtitle': true,
+                                                        'theme': 'dark',
+                                                        'onsuccess': onSuccess,
+                                                        'onfailure': onFailure
+                                                    });
                                                 }
                                             </script>
                                         </div>

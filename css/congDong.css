@@ -4,8 +4,10 @@
     color: #ff9f67;
 }
 
+
 /* Hashtag */
-.hashtag{
+
+.hashtag {
     cursor: pointer;
     padding: 10px;
     position: fixed;
@@ -14,14 +16,16 @@
     border-radius: 5px;
     background-color: hsla(29, 100%, 64%, 0.05);
 }
-.hashtag p{
+
+.hashtag p {
     font-weight: 500;
     font-size: 19px;
 }
 
+
 /* ----Post------ */
 
-.container-main {
+.container.main {
     width: 1110px;
     margin: auto;
 }
@@ -128,8 +132,8 @@
     text-decoration: none;
 }
 
-.post_head .ArtName{
- width: 400px;
+.post_head .ArtName {
+    width: 400px;
 }
 
 .ArtNamee {
@@ -148,6 +152,7 @@
     width: 100%;
     height: 12%;
 }
+
 .Music {
     width: 100%;
     height: 57%;
@@ -428,3 +433,216 @@
 
 
 /* Footer */
+
+@media all and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 438px;
+    }
+    #notify {
+        display: none;
+    }
+    header {
+        z-index: 15;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    header .container.nav {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar {
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar .nav {
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar .nav .nav__main {
+        height: 100px;
+        width: 414px;
+    }
+    .logoDiv {
+        position: absolute;
+        top: 8%;
+        left: 35%;
+    }
+    header .container.nav .navbar .nav .nav__main .logoDiv img {
+        width: 100px;
+    }
+    header .container.nav .navbar .nav .nav__main #border {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.first {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.congDong {
+        position: absolute;
+        top: 50%;
+        left: 38%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.live {
+        position: absolute;
+        top: 50%;
+        left: 80.5%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.faqs {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        font-family: inherit;
+        font-size: 50%;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+        background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+        border: solid 1px #efefef;
+        padding: 8px 15px;
+        width: 0px;
+        border-radius: 10em;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        position: absolute;
+        top: 8%;
+        left: 160%;
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-webkit-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]:-ms-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-ms-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav__signUp {
+        width: 0;
+    }
+    header .container.nav .navbar .nav__signUp .dangNhapDiv {
+        position: absolute;
+        top: 6%;
+        left: 73.5%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv {
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        position: absolute;
+        top: 8%;
+        left: 92.2%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv img {
+        width: 32px;
+        height: 32px;
+    }
+    header .container.nav .navbar .nav__signUp .uploadFile {
+        display: none;
+    }
+    .container.slide {
+        margin-bottom: 30px;
+    }
+    .slick-list {
+        height: 30vh;
+    }
+    .slick-slide img {
+        height: 30vh;
+    }
+    canvas {
+        margin-bottom: 10px;
+    }
+    .BXH__list {
+        height: 300px;
+    }
+    .BXH__list .list.list-unstyled {
+        height: 275px;
+    }
+    .list__item .listItem__number {
+        font-size: 14px;
+        width: 15px;
+    }
+    .list__item .listItem__img1 img,
+    .list__item .listItem__img2 img,
+    .list__item .listItem__img img {
+        width: 45px;
+        height: 45px;
+    }
+    .list__item .listItem__content {
+        font-size: 14px;
+    }
+    .list__item .listItem__additional {
+        display: none;
+    }
+    .col-md-5.BXHNdeXuat {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .col-md-5.BXHNdeXuat .listDeXuat {
+        font-size: 14px;
+    }
+    .slide__topCover {
+        height: 200px;
+    }
+    .slide__topCover div img {
+        height: 200px;
+    }
+    .slide__topSangTac {
+        height: 200px;
+    }
+    .slide__topSangTac div img {
+        height: 200px;
+    }
+    .slide__baiHatMoi {
+        height: 200px;
+    }
+    .slide__baiHatMoi div img {
+        height: 200px;
+    }
+    .container.main {
+        width: 414px;
+    }
+    .hashtag {
+        display: none;
+    }
+    .post-music1,
+    .post-music,
+    .post-video {
+        margin-left: 0;
+        width: 385px;
+        height: 385px;
+    }
+    #areaComment {
+        margin-left: 0;
+        width: 385px;
+    }
+    .cmt_head,
+    .cmt_headInput {
+        margin-right: 8px;
+    }
+    .cmt_text.p-3 {
+        width: 321px;
+    }
+    .fas.fa-ellipsis-h {
+        padding-right: 10px;
+    }
+    .Music {
+        height: 250px;
+    }
+    .background-img {
+        height: 245px;
+        margin-left: 35px;
+    }
+}
