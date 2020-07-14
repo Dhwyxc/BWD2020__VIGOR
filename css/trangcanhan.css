@@ -21,7 +21,13 @@
     margin-left: 260px;
     margin-top: 60px;
     font-size: 25px;
+    
     color: white;
+    background-color: #ff9f67;
+}
+#profile a{
+  color: white;
+  text-decoration: none;
 }
 .TCN__Body{
     margin-top: 10px;
@@ -622,4 +628,208 @@
     outline: none;
     display: none;
   
+  }
+  /* ------------- */
+  @media all and (max-width: 768px){
+    body {
+      overflow-x: hidden;
+      width: 414px;
+    }
+    header {
+      z-index: 15;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: white;
+    }
+    header .container.nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 100px;
+      width: 414px;
+    }
+    header .container.nav .navbar {
+      height: 100px;
+      width: 414px;
+    }
+    header .container.nav .navbar .nav {
+      height: 100px;
+      width: 414px;
+    }
+    header .container.nav .navbar .nav .nav__main {
+      height: 100px;
+      width: 414px;
+    }
+    header .container.nav .navbar .nav .nav__main .logoDiv {
+      position: absolute;
+      top: 8%;
+      left: 35%;
+    }
+    header .container.nav .navbar .nav .nav__main .logoDiv img {
+      width: 100px;
+    }
+    header .container.nav .navbar .nav .nav__main #border {
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.first {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.congDong {
+      position: absolute;
+      top: 50%;
+      left: 38%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.live {
+      position: absolute;
+      top: 50%;
+      left: 80.5%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.faqs {
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+      -webkit-appearance: textfield;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      font-family: inherit;
+      font-size: 50%;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+      background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+      border: solid 1px #efefef;
+      padding: 8px 15px;
+      width: 0px;
+      border-radius: 10em;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      position: absolute;
+      top: 8%;
+      left: 160%;
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-webkit-input-placeholder {
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]:-ms-input-placeholder {
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-ms-input-placeholder {
+      display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::placeholder {
+      display: none;
+    }
+    header .container.nav .navbar .nav__signUp .dangNhapDiv {
+      position: absolute;
+      top: 6%;
+      left: 73.5%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv {
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      position: absolute;
+      top: 8%;
+      left: 92.2%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv img {
+      width: 32px;
+      height: 32px;
+    }
+    header .container.nav .navbar .nav__signUp .uploadFile {
+      display: none;
+    }
+    #cover-img{
+      width: 414px;
+      height: 220px;
+    }
+    #ava-img{
+      margin-left: 107px;
+    }
+    #profile{
+    width: 414px;
+    top: 310px;
+    background-color: transparent;
+    position: absolute;
+    }
+    #profile a{
+      color: black;
+      font-weight: 600; 
+      margin-left: -24%;
+    }
+    #profile span{
+      display: none;
+    }
+    #notify{
+      display: none;
+    }
+    #footer{
+      display: none;
+    }
+    .col-md-8{
+      width: 414px;
+      top: 150px;
+    }
+    .col-md-8 .item__top{
+      width: 414px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .col-md-8 .item__top #all-tracks
+    {
+      font-size: 18px;
+    }
+    .col-md-4{
+      top: -650px;
+      width: 414px;
+    }
+    .col-md-4 .item__top{
+      width: 414px;
+      padding-left: 5px;
+    }
+    .col-md-4 .item__top #btn-following{
+      margin-left: 5px;
+    }
+    .item__body{
+      width: 414px;
+    }
+    .likes__list{
+      display: none;
+    }
+    .Fanalsolikes__list{
+      display: none;
+    }
+    .musicpost{
+      width: 414px;
+      height: 180px;
+    }
+    .Avatar{
+      display: none;
+    }
+    .titre{
+      left: -210px;
+    }
+    .lecteur{
+      width: 360px;
+      top: 30px;
+      left: -180px;
+    }
+    .tcn_comment{
+      width: 350px;
+      top:20px;
+      left: 5px;
+    }
+    .tcn_comment .heartbtn{
+      width: 250px;
+    }
+    .tcn_comment .playvcmt{
+      width: 100px;
+    }
+    
   }
