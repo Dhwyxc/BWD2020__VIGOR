@@ -127,7 +127,28 @@
             song.removeChild(SoN1);
         })
 
-        //
+        // Responsive 
+        function myFunction(respon) {
+            if (respon.matches) { // If media query matches
+                listenToMusic1.addEventListener("click", () => {
+                    fixedBottomNav.style.display = "none";
+                })
+                listenToMusic2.addEventListener("click", () => {
+                    fixedBottomNav.style.display = "none";
+                })
+            } else {
+                listenToMusic1.addEventListener("click", () => {
+                    fixedBottomNav.style.display = "block";
+                })
+                listenToMusic2.addEventListener("click", () => {
+                    fixedBottomNav.style.display = "block";
+                })
+            }
+        }
+
+        var respon = window.matchMedia("(max-width: 768px)");
+        myFunction(respon); // Call listener function at run time
+        respon.addListener(myFunction);
     </script>
 </body>
 

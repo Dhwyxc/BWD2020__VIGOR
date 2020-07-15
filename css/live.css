@@ -209,3 +209,257 @@
     border: 2px solid red;
     color: red;
 }
+
+@media all and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 414px;
+    }
+    #notify {
+        display: none;
+    }
+    header {
+        z-index: 15;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    header .container.nav {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar {
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar .nav {
+        height: 100px;
+        width: 414px;
+    }
+    header .container.nav .navbar .nav .nav__main {
+        height: 100px;
+        width: 414px;
+    }
+    .logoDiv {
+        position: absolute;
+        top: 8%;
+        left: 35%;
+    }
+    header .container.nav .navbar .nav .nav__main .logoDiv img {
+        width: 100px;
+    }
+    header .container.nav .navbar .nav .nav__main #border {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.first {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.congDong {
+        position: absolute;
+        top: 50%;
+        left: 38%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.live {
+        position: absolute;
+        top: 50%;
+        left: 80.5%;
+    }
+    header .container.nav .navbar .nav .nav__main .nav-item.faqs {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        font-family: inherit;
+        font-size: 50%;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search] {
+        background: #efefef url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+        border: solid 1px #efefef;
+        padding: 8px 15px;
+        width: 0px;
+        border-radius: 10em;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        position: absolute;
+        top: 8%;
+        left: 160%;
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-webkit-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]:-ms-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::-ms-input-placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav .nav__main input[type=search]::placeholder {
+        display: none;
+    }
+    header .container.nav .navbar .nav__signUp {
+        width: 0;
+    }
+    header .container.nav .navbar .nav__signUp .dangNhapDiv {
+        position: absolute;
+        top: 6%;
+        left: 73.5%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv {
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        position: absolute;
+        top: 8%;
+        right: 0%;
+    }
+    header .container.nav .navbar .nav__signUp .userDiv img {
+        width: 32px;
+        height: 32px;
+    }
+    header .container.nav .navbar .nav__signUp .uploadFile {
+        display: none;
+    }
+    .live__Header__Video__content {
+        width: 382.7px;
+        height: 250px;
+        position: sticky;
+        top: 100px;
+        z-index: 10;
+    }
+    #videoLIVE,
+    #canvasLIVE {
+        width: 382.7px;
+        height: 250px;
+    }
+    .live__Header__Video__content iframe {
+        width: 382.7px;
+        height: 250px;
+    }
+    .col-4.live__Header__Comment {
+        position: relative;
+        top: 440px;
+        left: -283px;
+    }
+    .live__Header__Comment__content {
+        width: 398px;
+    }
+    .live__DeXuat__caption {
+        position: relative;
+        top: 360px;
+    }
+    .row.live__DeXuat {
+        position: relative;
+        top: 360px;
+    }
+    .commentLive {
+        width: 398px;
+    }
+    /* .cmt_headInput {
+        width: 380px;
+    }
+    .cmt_body {
+        width: 350px;
+    } */
+    input.cmt_text {
+        width: 334px;
+    }
+    .live__Header__Video__caption__avatar {
+        position: relative;
+        top: -50px;
+        left: -370px;
+    }
+    .live__Header__Video__caption {
+        position: relative;
+        top: 100px;
+    }
+    .rounded-circle {
+        width: 34px;
+        height: 34px;
+    }
+    .name {
+        position: relative;
+        left: 20px;
+        top: 7px;
+    }
+    .name span.h3 {
+        font-size: 14px;
+        position: relative;
+        top: -10px;
+    }
+    .name span.FL {
+        font-size: 12px;
+        position: relative;
+        top: -20px;
+    }
+    #FLL {
+        position: relative;
+        left: 85px;
+        top: -20px;
+        width: 95px;
+    }
+    #FLLG {
+        position: relative;
+        left: 70px;
+        top: -50px;
+        width: 110px;
+    }
+    .live__Header__Video__caption__Tieude {
+        position: relative;
+        top: -110px;
+    }
+    .live__Header__Video__caption__Tieude h5 {
+        width: 382px;
+        font-size: 18px;
+    }
+    .live__Header__Video__caption__Tieude p {
+        width: 382px;
+        font-size: 12px;
+    }
+    .live__Header__Video__caption__TuongTac {
+        display: flex;
+        width: 200px;
+        padding-bottom: 0px;
+        height: 1px;
+    }
+    .live__Header__Video__caption__TuongTac button {
+        position: relative;
+        top: -80px;
+        left: -170px;
+        width: 500px;
+    }
+    .row.live__DeXuat {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0 !important;
+        padding-left: 15px;
+    }
+    .row.live__DeXuat .col-6 .row {
+        width: 400px;
+    }
+    .col-5.live__DeXuat__content iframe {
+        width: 160px;
+        height: 120px;
+    }
+    .col-7.live__DeXuat__content span {
+        width: 254px;
+    }
+    .col-7.live__DeXuat__content span:first-child {
+        width: 254px;
+        font-size: 14px;
+    }
+    .col-7.live__DeXuat__content span.text-muted.font-weight-normal {
+        width: 254px;
+        font-size: 12px !important;
+    }
+    .col-7.live__DeXuat__content span.text-muted.font-weight-normal button {
+        font-size: 10px !important;
+        width: 70px;
+    }
+}
