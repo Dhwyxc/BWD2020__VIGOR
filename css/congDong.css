@@ -31,8 +31,8 @@
 }
 
 .post-music1 {
+    position: relative;
     margin-top: 20px;
-    margin-bottom: -180px;
     width: 500px;
     height: 300px;
     background-color: rgb(255, 255, 255);
@@ -42,6 +42,7 @@
 }
 
 .post-music {
+    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
@@ -57,6 +58,7 @@
     margin-top: -24px;
     margin-bottom: 20px;
     position: relative;
+    display: none;
     width: 500px;
     height: 180px;
     z-index: -1;
@@ -64,7 +66,7 @@
     box-shadow: 0px 25px 20px 5px rgba(128, 128, 128, 0.363);
     border-radius: 0px 0px 8px 8px;
     margin-left: 305px;
-    transform: translateY(-9999px);
+    transform: translateY(-9990px);
 }
 
 .post-video {
@@ -437,7 +439,7 @@
 @media all and (max-width: 768px) {
     body {
         overflow-x: hidden;
-        width: 438px;
+        width: 414px;
     }
     #notify {
         display: none;
@@ -541,7 +543,7 @@
         transition: all .5s;
         position: absolute;
         top: 8%;
-        left: 92.2%;
+        right: 0%;
     }
     header .container.nav .navbar .nav__signUp .userDiv img {
         width: 32px;
@@ -550,82 +552,26 @@
     header .container.nav .navbar .nav__signUp .uploadFile {
         display: none;
     }
-    .container.slide {
-        margin-bottom: 30px;
-    }
-    .slick-list {
-        height: 30vh;
-    }
-    .slick-slide img {
-        height: 30vh;
-    }
-    canvas {
-        margin-bottom: 10px;
-    }
-    .BXH__list {
-        height: 300px;
-    }
-    .BXH__list .list.list-unstyled {
-        height: 275px;
-    }
-    .list__item .listItem__number {
-        font-size: 14px;
-        width: 15px;
-    }
-    .list__item .listItem__img1 img,
-    .list__item .listItem__img2 img,
-    .list__item .listItem__img img {
-        width: 45px;
-        height: 45px;
-    }
-    .list__item .listItem__content {
-        font-size: 14px;
-    }
-    .list__item .listItem__additional {
-        display: none;
-    }
-    .col-md-5.BXHNdeXuat {
-        width: 100%;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    .col-md-5.BXHNdeXuat .listDeXuat {
-        font-size: 14px;
-    }
-    .slide__topCover {
-        height: 200px;
-    }
-    .slide__topCover div img {
-        height: 200px;
-    }
-    .slide__topSangTac {
-        height: 200px;
-    }
-    .slide__topSangTac div img {
-        height: 200px;
-    }
-    .slide__baiHatMoi {
-        height: 200px;
-    }
-    .slide__baiHatMoi div img {
-        height: 200px;
-    }
     .container.main {
         width: 414px;
     }
     .hashtag {
         display: none;
     }
-    .post-music1,
-    .post-music,
     .post-video {
         margin-left: 0;
         width: 385px;
         height: 385px;
     }
-    #areaComment {
+    .post-music1,
+    .post-music{
+        width: 385px;
         margin-left: 0;
+        height: 295px;
+    }
+    #areaComment {
+        position: relative;
+        left: -79.4%;
         width: 385px;
     }
     .cmt_head,
@@ -639,10 +585,12 @@
         padding-right: 10px;
     }
     .Music {
-        height: 250px;
+        height: 170px;
+    }
+    .lecteur{
+        top: 20px;
     }
     .background-img {
-        height: 245px;
-        margin-left: 35px;
+        height: 165px;
     }
 }

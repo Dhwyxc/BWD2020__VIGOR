@@ -691,7 +691,7 @@ h2 {
 @media all and (max-width: 768px) {
   body {
     overflow-x: hidden;
-    width: 438px;
+    width: 414px;
   }
   #notify {
     display: none;
@@ -800,7 +800,7 @@ h2 {
     transition: all .5s;
     position: absolute;
     top: 8%;
-    left: 92.2%;
+    right: 0%;
   }
   header .container.nav .navbar .nav__signUp .userDiv img {
     width: 32px;
@@ -897,9 +897,16 @@ h2 {
   .topCover .playlist-link, .topSangTac .playlist-link, .baiHatMoi .playlist-link {
     width: 190px !important;
   }
-  .topCover .slide__topCover, .topSangTac .slide__topCover, .baiHatMoi .slide__topCover {
-    height: 200px;
+  .topCover .slick-track, .topSangTac .slick-track, .baiHatMoi .slick-track {
     width: 400px;
+    height: 180px;
+  }
+  .topCover .slick-list.draggable, .topSangTac .slick-list.draggable, .baiHatMoi .slick-list.draggable {
+    height: 180px;
+  }
+  .topCover .slide__topCover, .topSangTac .slide__topCover, .baiHatMoi .slide__topCover {
+    height: 180px;
+    width: 375px;
   }
   .topCover .slide__topCover .slide__img00, .topSangTac .slide__topCover .slide__img00, .baiHatMoi .slide__topCover .slide__img00,
   .topCover .slide__topCover .slide__img01,
@@ -1174,12 +1181,19 @@ h2 {
     display: none;
   }
   .topSangTac {
-    height: 246.4px;
+    height: 220px;
     margin-bottom: 40px;
   }
-  .topSangTac .slide__topSangTac {
-    height: 200px;
+  .topSangTac .slick-track {
     width: 400px;
+    height: 180px;
+  }
+  .topSangTac .slick-list.draggable {
+    height: 180px;
+  }
+  .topSangTac .slide__topSangTac {
+    height: 180px;
+    width: 375px;
   }
   .topSangTac .slide__topSangTac .slide__img00,
   .topSangTac .slide__topSangTac .slide__img01,
@@ -1283,9 +1297,16 @@ h2 {
   .topSangTac .slick--nextSangTac {
     display: none;
   }
-  .baiHatMoi .slide__baiHatMoi {
-    height: 200px;
+  .baiHatMoi .slick-track {
     width: 400px;
+    height: 180px;
+  }
+  .baiHatMoi .slick-list.draggable {
+    height: 180px;
+  }
+  .baiHatMoi .slide__baiHatMoi {
+    height: 180px;
+    width: 375px;
   }
   .baiHatMoi .slide__baiHatMoi .slide__img00,
   .baiHatMoi .slide__baiHatMoi .slide__img01,
