@@ -437,7 +437,7 @@
 @media all and (max-width: 768px) {
     body {
         overflow-x: hidden;
-        width: 438px;
+        width: 414px;
     }
     #notify {
         display: none;
@@ -541,7 +541,7 @@
         transition: all .5s;
         position: absolute;
         top: 8%;
-        left: 92.2%;
+        right: 0%;
     }
     header .container.nav .navbar .nav__signUp .userDiv img {
         width: 32px;
@@ -624,6 +624,10 @@
         width: 385px;
         height: 385px;
     }
+    .post-music1,
+    .post-music{
+        height: 295px;
+    }
     #areaComment {
         margin-left: 0;
         width: 385px;
@@ -639,10 +643,12 @@
         padding-right: 10px;
     }
     .Music {
-        height: 250px;
+        height: 170px;
+    }
+    .lecteur{
+        top: 20px;
     }
     .background-img {
-        height: 245px;
-        margin-left: 35px;
+        height: 165px;
     }
 }
