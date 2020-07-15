@@ -367,10 +367,11 @@
     width: 100px;
     height: 30px;
     outline: none;
-    border: 0;
+    border: 2px solid rgba(167, 167, 167, 0.527);
     background-color: #ff9f67;
     color: white;
     border-radius: 3px;
+    cursor: pointer;
   
 
 }
