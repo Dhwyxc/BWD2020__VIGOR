@@ -41,23 +41,25 @@
             <nav class="navbar">
                 <div class="nav">
                     <div class="nav__main  mt-1">
-                        <span class="logo">
-                            <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
-                        </span>
-                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3"></li>
+                        <div class="logoDiv">
+                            <span class="logo">
+                                <a href="index.html"><img class="logo ml-4 mr-4" src="image/logo.png" alt="logo"></a>
+                            </span>
+                        </div>
+                        <li style="border-right: 3px solid rgb(77, 77, 77); height: 45px;" class="mb-3" id="border"></li>
                         <li class="nav-item first">
                             <a class="nav-link ml-2" href="index.html" id="nav_trangChu">Trang chủ</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item congDong">
                             <a class="nav-link " href="congDong.html" id="nav_congDong">Cộng đồng</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="" id="nav_LIVE">LIVE</a>
+                        <li class="nav-item live">
+                            <a class="nav-link" href="live.html" id="nav_LIVE">LIVE</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item faqs">
                             <a class="nav-link" href="" id="nav_FAQs">FAQs</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item search">
                             <form>
                                 <input type="search" placeholder="Music, Singer,...">
                             </form>
@@ -65,11 +67,15 @@
                     </div>
                     <div class="nav__signUp">
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a> -->
+                            <div class="dangNhapDiv">
+                                <!-- <a class="nav-link" href="#" id="nav_dangNhap">Đăng nhập</a> -->
+                            </div>
                             <div class="userOption" style="display: block;">
-                                <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
-                                    <img src="image/image.jpg" alt="userAva" width="44px" height="44px">
-                                </a>
+                                <div class="userDiv">
+                                    <a class="nav-link__user" href="tcnuser.html" id="nav_ava">
+                                        <img alt="userAva" width="44px" height="44px" id="nav_ava-user">
+                                    </a>
+                                </div>
                                 <div class="uploadFile">
                                     <label for="songUpload" class="uploadSongs">
                                         <div class="nav-link__upload" href="#" id="nav_upload">
