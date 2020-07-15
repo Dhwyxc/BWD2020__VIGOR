@@ -547,20 +547,63 @@ h2 {
             display: none;
         }
     }
+    .col-md-7.BXHNdeXuat {
+        h2 {
+            font-size: 25px;
+        }
+        .listItem__img1,
+        .listItem__img2,
+        .listItem__img {
+            &:hover {
+                margin-right: 16.9px;
+                img {
+                    filter: brightness(100%);
+                }
+                .fa.fa-play {
+                    display: none;
+                }
+            }
+        }
+    }
     .col-md-5.BXHNdeXuat {
         width: 100%;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 5px;
         // padding: 0 30px;
+        h2 {
+            font-size: 25px;
+        }
         .listDeXuat {
             font-size: 14px;
             // padding: 0 15px;
+            &__songImg {
+                &:hover {
+                    img {
+                        filter: brightness(100%);
+                    }
+                    .fas.fa-play {
+                        display: none;
+                    }
+                }
+            }
+            &__heart {
+                display: none;
+            }
+            &__ellipsis {
+                display: none;
+            }
         }
     }
     .topCover {
         margin-top: 20px;
         margin-bottom: 50px;
+        h2 {
+            font-size: 20px;
+        }
+        .playlist-link {
+            width: 190px !important;
+        }
         .slide__topCover {
             height: 200px;
             width: 400px;
@@ -574,6 +617,7 @@ h2 {
             .slide__img07,
             .slide__img08,
             .slide__img09 {
+                width: 190px !important;
                 img {
                     width: 170px;
                     height: 170px;
@@ -599,6 +643,7 @@ h2 {
     }
     .topSangTac {
         height: 246.4px;
+        margin-bottom: 40px;
         .slide__topSangTac {
             height: 200px;
             width: 400px;
@@ -612,6 +657,7 @@ h2 {
             .slide__img07,
             .slide__img08,
             .slide__img09 {
+                width: 190px !important;
                 img {
                     width: 170px;
                     height: 170px;
@@ -636,7 +682,6 @@ h2 {
         }
     }
     .baiHatMoi {
-        margin-top: -50px;
         .slide__baiHatMoi {
             height: 200px;
             width: 400px;
@@ -650,6 +695,7 @@ h2 {
             .slide__img07,
             .slide__img08,
             .slide__img09 {
+                width: 190px !important;
                 img {
                     width: 170px;
                     height: 170px;
