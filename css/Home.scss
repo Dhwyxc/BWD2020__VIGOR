@@ -406,7 +406,7 @@ h2 {
 @media all and (max-width:768px) {
     body {
         overflow-x: hidden;
-        width: 438px;
+        width: 414px;
     }
     #notify {
         display: none;
@@ -496,7 +496,7 @@ h2 {
                         transition: all .5s;
                         position: absolute;
                         top: 8%;
-                        left: 92.2%;
+                        right: 0%;
                         img {
                             width: 32px;
                             height: 32px;
@@ -604,9 +604,16 @@ h2 {
         .playlist-link {
             width: 190px !important;
         }
-        .slide__topCover {
-            height: 200px;
+        .slick-track{
             width: 400px;
+            height: 180px;
+        }
+        .slick-list.draggable{
+            height: 180px;
+        }
+        .slide__topCover {
+            height: 180px;
+            width: 375px;
             .slide__img00,
             .slide__img01,
             .slide__img02,
@@ -642,11 +649,18 @@ h2 {
         }
     }
     .topSangTac {
-        height: 246.4px;
+        height: 220px;
         margin-bottom: 40px;
-        .slide__topSangTac {
-            height: 200px;
+        .slick-track{
             width: 400px;
+            height: 180px;
+        }
+        .slick-list.draggable{
+            height: 180px;
+        }
+        .slide__topSangTac {
+            height: 180px;
+            width: 375px;
             .slide__img00,
             .slide__img01,
             .slide__img02,
@@ -682,9 +696,16 @@ h2 {
         }
     }
     .baiHatMoi {
-        .slide__baiHatMoi {
-            height: 200px;
+        .slick-track{
             width: 400px;
+            height: 180px;
+        }
+        .slick-list.draggable{
+            height: 180px;
+        }
+        .slide__baiHatMoi {
+            height: 180px;
+            width: 375px;
             .slide__img00,
             .slide__img01,
             .slide__img02,
