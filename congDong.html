@@ -383,7 +383,7 @@
             <div class="cmt_headInput pt-3 ml-2">
                 <div class="Avatarcmt">
                     <a href="tcnuser.html">
-                        <img class="Avatarcmt" src="image/image.jpg" alt="Avatar">
+                        <img id="ava-img" class="Avatarcmt" alt="Avatar">
                     </a>
                 </div>
                 <div class="cmt_body ml-2">
@@ -417,7 +417,9 @@
                     linkImg.href = "tcnuser.html";
                     let imgCmt = document.createElement("img");
                     imgCmt.className = "Avatarcmt";
-                    imgCmt.src = "image/image.jpg";
+                    imgCmt.id = "ava-img";
+
+                    // imgCmt.src = "image/image.jpg";
                     linkImg.appendChild(imgCmt);
 
                     let textCmt = document.createElement("div");
@@ -426,9 +428,11 @@
                     let linkBio = document.createElement("a");
                     linkBio.className = "pl-2";
                     linkBio.href = "tcnuser.html";
+                    linkBio.id = "ava_name";
                     userCmt.appendChild(linkBio);
-                    let name = document.createTextNode("Anon: ");
-                    linkBio.appendChild(name);
+                    // let name = document.inner("dh: ");
+                    // name.id = "ava_name";
+                    // linkBio.appendChild(name);
                     let cm = document.createElement("span");
                     let t = document.createTextNode(cmts);
                     cm.appendChild(t);
