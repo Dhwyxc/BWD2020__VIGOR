@@ -50,15 +50,9 @@
                                                     var profile = googleUser.getBasicProfile();
                                                     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                                                     console.log('Name: ' + profile.getName());
-                                                    const avaName = document.getElementById("ava_name");
-                                                    avaName.innerHTML = profile.getName();
                                                     console.log('Image URL: ' + profile.getImageUrl());
-
                                                     const ava = document.getElementById("nav_ava-user");
                                                     ava.src = profile.getImageUrl();
-                                                    const ava = document.getElementById("ava-img");
-                                                    ava.src = profile.getImageUrl();
-
                                                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
                                                 }
