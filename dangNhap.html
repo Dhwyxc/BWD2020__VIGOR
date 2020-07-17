@@ -56,9 +56,8 @@
 
                                                     const ava = document.getElementById("nav_ava-user");
                                                     ava.src = profile.getImageUrl();
-                                                    const ava = document.getElementById("ava-img");
-                                                    ava.src = profile.getImageUrl();
-
+                                                    const avaIMG = document.getElementById("ava-img");
+                                                    avaIMG.src = profile.getImageUrl();
                                                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
                                                 }
